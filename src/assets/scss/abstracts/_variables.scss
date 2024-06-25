@@ -1,43 +1,48 @@
 // Color system
 
 // scss-docs-start brand-color-variables
-$sky-blue-crayola: #4CD6E9;
-$baby-blue-light: #EDFDFF;
-$ultramarine-blue: #706DF8;
-$ultramine-blue-pale: #E9E9FF;
-$ultramarine-blue-light: #F4F3FF;
+$brand-primary: #e36b45;
+$brand-primary-dark: #a14b2a;
+
+$neutral-bg-dark: #1e1e0a;
+$neutral-text-dark: #1e1c0b;
+$neutral-gray: #8b8b8b;
+$neutral-bg-light: #eaeaea;
+$neutral-bg: #e2e0df;
+$neutral-text-white: #e4e3e2;
+
 // scss-docs-end brand-color-variables
 
 // scss-docs-start black-color-variables
-$white: #FFFFFF;
-$black-10: #E8EDF4;
-$black-20: #C0CBDC;
-$black-40: #8A9BB5;
+$white: #ffffff;
+$black-10: #e8edf4;
+$black-20: #c0cbdc;
+$black-40: #8a9bb5;
 $black-60: #697383;
-$black-80: #37455A;
+$black-80: #37455a;
 $black: #051631; // black-100
 // scss-docs-end black-color-variables
 
 // scss-docs-start accent-color-variables
-$blue: #26A4FF;
-$blue-pale: #BEE4FF;
-$yellow: #FFB836;
-$yellow-pale: #FFE4B1;
-$green: #56CDAD;
-$green-pale: #CCF0E6;
-$red: #FF6550;
-$red-pale: #FFD1CB;
+$blue: #26a4ff;
+$blue-pale: #bee4ff;
+$yellow: #ffb836;
+$yellow-pale: #ffe4b1;
+$green: #56cdad;
+$green-pale: #ccf0e6;
+$red: #ff6550;
+$red-pale: #ffd1cb;
 // scss-docs-end accent-color-variables
 
 // scss-docs-start theme-color-variables
-$primary: $ultramarine-blue;
-$secondary: $sky-blue-crayola;
+$primary: $brand-primary;
+$secondary: $brand-primary-dark;
 $success: $green;
 $info: $blue;
 $warning: $yellow;
 $danger: $red;
-$light: $black-10;
-$dark: $black-80;
+$dark: #0000;
+$light: #eaeaea;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start shadow-color-variables
@@ -47,29 +52,14 @@ $shadow-featured-hover-color: rgba(112, 109, 248, 0.1);
 $shadow-blue-hover-color: rgba(112, 109, 248, 0.08);
 // scss-docs-end shadow-color-variables
 
-
 // Our custom color
 $custom-colors: (
-  'sky-blue-crayola':$sky-blue-crayola,
-  'baby-blue-light':$baby-blue-light,
-  'ultramarine-blue':$ultramarine-blue,
-  'ultramine-blue-pale':$ultramine-blue-pale,
-  'ultramarine-blue-light':$ultramarine-blue-light,
-  'white':$white,
-  'black-10':$black-10,
-  'black-20':$black-20,
-  'black-40':$black-40,
-  'black-60':$black-60,
-  'black-80':$black-80,
-  'black':$black,
-  'blue':$blue,
-  'blue-pale':$blue-pale,
-  'yellow':$yellow,
-  'yellow-pale':$yellow-pale,
-  'green':$green,
-  'green-pale':$green-pale,
-  'red':$red,
-  'red-pale':$red-pale
+  "neutral-bg-dark": $neutral-bg-dark,
+  "neutral-text-dark": $neutral-text-dark,
+  "neutral-gray": $neutral-gray,
+  "neutral-bg-light": $neutral-bg-light,
+  "neutral-bg": $neutral-bg,
+  "neutral-text-white": $neutral-text-white,
 );
 
 $theme-colors: (
@@ -80,18 +70,16 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark
+  "dark": $dark,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
-
 
 // Minimum contrast
 //
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
 $min-contrast-ratio: 1.5;
-
 
 // Breakpoints
 //
@@ -106,10 +94,9 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1440px
+  xxl: 1440px,
 );
 // scss-docs-end grid-breakpoints
-
 
 // Grid containers
 //
@@ -121,23 +108,20 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1240px
+  xxl: 1240px,
 );
 // scss-docs-end container-max-widths
-
 
 // Container padding
 
 $container-padding-x: toRem(40);
 
-
 // Body
 
 // scss-docs-start body-elements
-$body-bg: #FBFEFF;
-$body-color: $black-80;
+$body-bg: $neutral-bg;
+$body-color: $neutral-bg-dark;
 // scss-docs-end body-elements
-
 
 // Links
 
@@ -147,13 +131,11 @@ $link-decoration: none;
 $link-hover-decoration: null;
 // scss-docs-end anchor-elements
 
-
 // Paragraphs
 
 // scss-docs-start paragraph-elements
 $paragraph-margin-bottom: 0;
 // scss-docs-end paragraph-elements
-
 
 // Components
 //
@@ -161,7 +143,7 @@ $paragraph-margin-bottom: 0;
 
 // scss-docs-start border-variables
 $border-color: $black-20;
-$border-color-translucent: rgba($black, .175);
+$border-color-translucent: rgba($black, 0.175);
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -180,12 +162,12 @@ $box-shadow-featured-hover: 0px 16px 28px $shadow-featured-hover-color;
 $box-shadow-blue-hover: 0px 16px 28px $shadow-blue-hover-color;
 // scss-docs-end box-shadow-variables
 
-
 // Typography
 
 // scss-docs-start font-variables
-$font-family-base: 'Open Sauce Sans',
-  sans-serif;
+$font-family-base: "Plus Jakarta Sans", sans-serif;
+$font-heading-lc: "ThunderLC", Georgia;
+$font-heading-hc: "ThunderHC", Georgia;
 
 $font-size-base: toRem(16);
 $font-size-sm: toRem(14);
@@ -202,33 +184,47 @@ $line-height-lg: 1.56;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
-$h1-font-size: toRem(62);
-$h2-font-size: toRem(50);
-$h3-font-size: toRem(42);
-$h4-font-size: toRem(34);
-$h5-font-size: toRem(26);
+$h1-font-size: toRem(144);
+$h2-font-size: toRem(80);
+$h3-font-size: toRem(56);
+$h4-font-size: toRem(40);
+$h5-font-size: toRem(32);
 $h6-font-size: toRem(22);
 
-$h1-mobile-font-size: toRem(40);
-$h2-mobile-font-size: toRem(32);
-$h3-mobile-font-size: toRem(28);
-$h4-mobile-font-size: toRem(24);
+$h1-mobile-font-size: toRem(72);
+$h2-mobile-font-size: toRem(48);
+$h3-mobile-font-size: toRem(36);
+$h4-mobile-font-size: toRem(26);
 $h5-mobile-font-size: toRem(20);
 $h6-mobile-font-size: toRem(16);
 
-$h1-line-height: 1.35;
-$h2-line-height: 1.36;
-$h3-line-height: 1.24;
-$h4-line-height: 1.29;
-$h5-line-height: 1.38;
+$h1-line-height: toRem(132);
+$h2-line-height: toRem(80);
+$h3-line-height: toRem(60);
+$h4-line-height: toRem(44);
+$h5-line-height: toRem(38);
 $h6-line-height: 1.45;
 
-$h1-mobile-line-height: 1.35;
-$h2-mobile-line-height: 1.31;
-$h3-mobile-line-height: 1.29;
-$h4-mobile-line-height: 1.33;
-$h5-mobile-line-height: 1.40;
+$h1-mobile-line-height: toRem(72);
+$h2-mobile-line-height: toRem(48);
+$h3-mobile-line-height: toRem(36);
+$h4-mobile-line-height: toRem(32);
+$h5-mobile-line-height: 1.4;
 $h6-mobile-line-height: 1.38;
+
+$h1-letter-spacing: 0;
+$h2-letter-spacing: 0.05;
+$h3-letter-spacing: 0.05;
+$h4-letter-spacing: 0.07;
+$h5-letter-spacing: 0.07;
+$h6-letter-spacing: 0.07;
+
+$h1-mobile-letter-spacing: 0;
+$h2-mobile-letter-spacing: 0.05;
+$h3-mobile-letter-spacing: 0.05;
+$h4-mobile-letter-spacing: 0.07;
+$h5-mobile-letter-spacing: 0.07;
+$h6-mobile-letter-spacing: 0.07;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
@@ -236,7 +232,6 @@ $headings-margin-bottom: 0;
 $headings-font-weight: 700;
 $headings-color: $black;
 // scss-docs-end headings-variables
-
 
 // Buttons + Forms
 //
@@ -254,9 +249,8 @@ $input-btn-font-size-sm: $font-size-sm;
 
 $input-btn-padding-y-lg: toRem(16);
 $input-btn-padding-x-lg: toRem(32);
-$input-btn-font-size-lg: $font-size-lg ;
+$input-btn-font-size-lg: $font-size-lg;
 // scss-docs-end input-btn-variables
-
 
 // Buttons
 //
@@ -275,7 +269,6 @@ $btn-border-radius: $border-radius;
 $btn-border-radius-sm: $border-radius;
 $btn-border-radius-lg: $border-radius;
 // scss-docs-end btn-variables
-
 
 // Forms
 
@@ -320,7 +313,7 @@ $input-border-radius-sm: $border-radius;
 $input-border-radius-lg: $border-radius;
 
 $input-focus-bg: $input-bg;
-$input-focus-border-color: $ultramarine-blue;
+$input-focus-border-color: $primary;
 $input-focus-color: $input-color;
 $input-focus-box-shadow: unset;
 
