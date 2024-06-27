@@ -1,0 +1,29 @@
+.home-page {
+  .event-list {
+    padding-block: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    &__title {
+      padding-inline: 48px;
+    }
+
+    &__dates {
+      display: flex;
+      justify-content: center;
+
+      & > * {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: end;
+      gap: 12px;
+    }
+  }
+}
