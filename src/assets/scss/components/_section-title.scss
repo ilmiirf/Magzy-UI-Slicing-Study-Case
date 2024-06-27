@@ -1,0 +1,10 @@
+.section__title {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  > a {
+    margin-bottom: 20px;
+  }
+}

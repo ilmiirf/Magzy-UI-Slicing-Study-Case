@@ -1,0 +1,42 @@
+.blog {
+  width: 100%;
+  height: fit-content;
+  background: transparent;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  &__meta {
+    display: flex;
+    gap: 24px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: inherit;
+
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &--inline {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  &--block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+}

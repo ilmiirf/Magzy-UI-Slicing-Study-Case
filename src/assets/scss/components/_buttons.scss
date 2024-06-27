@@ -1,0 +1,88 @@
+.button-icon {
+  border-radius: 999px;
+  border: 1px solid;
+  border-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: $primary;
+    border-color: $primary;
+  }
+
+  &--large {
+    height: 64px;
+    width: 64px;
+    > i {
+      font-size: 48px;
+      color: inherit;
+    }
+  }
+
+  &--small {
+    height: 48px;
+    width: 48px;
+    > i {
+      font-size: 36px;
+      color: inherit;
+    }
+  }
+}
+
+.button-slider-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.button-link {
+  text-transform: uppercase;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: $neutral-text-white;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &--dark {
+    color: $neutral-text-dark;
+    > i {
+      font-size: 40px;
+    }
+  }
+
+  & > i {
+    font-size: 40px;
+  }
+}
+
+.button-tab {
+  flex-grow: 1;
+  padding: 24px 0;
+  color: $neutral-text-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &--active {
+    background-color: $neutral-bg-dark;
+    color: $neutral-text-white !important;
+
+    &:hover {
+      color: $neutral-text-white;
+    }
+  }
+}

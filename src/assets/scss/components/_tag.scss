@@ -1,0 +1,19 @@
+.tag {
+  height: fit-content;
+  width: fit-content;
+  padding-block: 2px;
+  padding-inline: 16px;
+
+  text-transform: uppercase;
+
+  &--light {
+    background-color: transparent;
+    color: $neutral-text-dark;
+    border: 1px solid $neutral-gray;
+  }
+  &--dark {
+    background-color: transparent;
+    color: $neutral-text-white;
+    border: 1px solid $neutral-text-white;
+  }
+}
