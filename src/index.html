@@ -20,6 +20,8 @@ License: -
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
 
+    <!-- <link rel="stylesheet" href="assets/scss/styles.css" /> -->
+
     <!-- Start::Global Styles (used by all pages) -->
     <link
       href="assets/css/styles.bundle.css"
@@ -34,16 +36,247 @@ License: -
       type="text/css"
     />
     <!-- End::Page Styles -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
 
-  <body>
+  <body class="home-page">
     <!-- Start::Header Section -->
-    <header></header>
+    <header class="header">
+      <div class="navigation">
+        <nav class="navigation__menu">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">News</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Events</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Shop</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navigation__logo">
+          <img src="assets/media/images/logo-small.png" alt="logo" />
+        </div>
+        <div class="navigation__action">
+          <i class="bi bi-cart3 navigation__icon-cart"></i>
+          <div class="button-text button-text--normal">SUBSCRIBE</div>
+        </div>
+      </div>
+    </header>
     <!-- End::Header Section -->
 
-    <!-- Start::Features Section -->
-    <div></div>
-    <!-- End::Features Section -->
+    <main>
+      <!-- Start::Hero Section -->
+      <section class="section-heroes">
+        <div class="hero">
+          <div class="hero__title">
+            <span class="title1 title1--hc">Magzy</span>
+            <span class="title4 title4--lc">Magazine</span>
+          </div>
+          <div class="hero__image">
+            <img src="assets/media/images/hero.png" alt="hero" />
+          </div>
+        </div>
+      </section>
+      <!-- End::Hero Section -->
+
+      <!-- Start::Features Section -->
+      <section class="section-features">
+        <div class="feature">
+          <div class="feature__slide-list">
+            <div class="feature__slide-item">
+              <div class="feature__image">
+                <img
+                  src="assets/media/images/featured-post1.png"
+                  alt="feature"
+                />
+              </div>
+
+              <div class="feature__content blog">
+                <div class="blog__content">
+                  <div class="blog__meta">
+                    <div class="tag tag--light">
+                      <p class="text-normal--medium">fashion</p>
+                    </div>
+                    <p class="text-normal--regular">Aug 8, 2022</p>
+                  </div>
+                  <div class="blog__title">
+                    <p class="h2 h2--lc">
+                      The Manhattan STREET Show included a lot of eccentric
+                      fashion.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature__description">
+                  <p class="text-large--regular">
+                    Despite the cold weather, shoppers lined up outside the
+                    Manhattan Vintage Show last Friday. Co-owner Amy Abrams said
+                    they had vintage items for all eras and price points,
+                    including clothing and accessories. The shoppers were there
+                    for the triennial event, hoping to find 1950s outfits or a
+                    Versace leather jacket
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature__right-side">
+            <div class="button-slider-box">
+              <div class="button-icon button-icon--large" id="prev-option">
+                <i class="bi bi-arrow-left"></i>
+              </div>
+              <div class="button-icon button-icon--large" id="next-option">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="feature__image-side">
+            <img
+              src="assets/media/images/featured-image-hide.png"
+              alt="feature"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End::Features Section -->
+
+      <!-- Start::Stories Section -->
+      <section class="section-stories">
+        <div class="story">
+          <div class="section__title">
+            <div>
+              <span class="title2 title2--lc">Today's </span>
+              <span class="title2 title2--hc">Stories</span>
+            </div>
+            <a class="button-link h4 h4--lc">
+              view all <i class="bi bi-arrow-up-right"></i
+            ></a>
+          </div>
+          <div class="story__content">
+            <div class="story__item-1 blog blog--block">
+              <img src="assets/media/images/story1.png" alt="story" />
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="tag tag--dark">
+                    <p class="text-normal--medium">fashion</p>
+                  </div>
+                  <p class="text-normal--regular">Aug 10, 2022</p>
+                </div>
+                <div class="blog__title">
+                  <h3 class="h3 h3--lc">
+                    What Street Fashion Was Like a Decade Ago
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="story__item-2 blog blog--inline">
+              <img src="assets/media/images/story2.png" alt="story" />
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="tag tag--dark">
+                    <p class="text-normal--medium">fashion</p>
+                  </div>
+                  <p class="text-normal--regular">Aug 10, 2022</p>
+                </div>
+                <div class="blog__title">
+                  <h3 class="h3 h3--lc">
+                    Men, promise, skirts aren't that scary!
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="story__item-3 blog blog--inline">
+              <img src="assets/media/images/story3.png" alt="story" />
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="tag tag--dark">
+                    <p class="text-normal--medium">fashion</p>
+                  </div>
+                  <p class="text-normal--regular">Aug 10, 2022</p>
+                </div>
+                <div class="blog__title">
+                  <h3 class="h3 h3--lc">
+                    The Best Copenhagen Street Style Photos From the Fall 2023
+                    Season
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End::Stories Section -->
+
+      <!-- Start::Even List Section -->
+      <section class="section-event-list">
+        <div class="event-list">
+          <div class="event-list__title section__title">
+            <div>
+              <span class="title2 title2--lc">Event </span>
+              <span class="title2 title2--hc">List</span>
+            </div>
+            <a class="button-link button-link--dark h4 h4--lc">
+              view all <i class="bi bi-arrow-up-right"></i
+            ></a>
+          </div>
+          <div class="event-list__dates">
+            <div class="button-tab h4 h4--lc">20.03.2023</div>
+            <div class="button-tab button-tab--active h4 h4--lc">
+              21.03.2023
+            </div>
+            <div class="button-tab h4 h4--lc">22.03.2023</div>
+            <div class="button-tab h4 h4--lc">23.03.2023</div>
+            <div class="button-tab h4 h4--lc">24.03.2023</div>
+          </div>
+          <div class="event-list__content">
+            <img src="assets/media/images/event-list1.png" alt="event" />
+
+            <div class="event-list__detail">TODO EVENT CARD</div>
+          </div>
+        </div>
+      </section>
+      <!-- End::Even List Section -->
+
+      <!-- Start::Photoshot Section -->
+      <section class="section-phooshoot">
+        <div class="phooshoot">
+          <div class="phothoshoot__title section__title">
+            <div>
+              <span class="title2 title2--lc">fashion </span>
+              <span class="title2 title2--hc">photoshoot</span>
+            </div>
+            <a class="button-link button-link--dark h4 h4--lc">
+              view all <i class="bi bi-arrow-up-right"></i
+            ></a>
+          </div>
+          <div class="photoshoot__content">
+            <div class="photoshoot__wrapper">
+              <div class="photoshoot__info">
+                <div class="h4 h4--lc">Photo of Fashion Model Nicole Black at Del Mar Villa in Dundee Oregon</div>
+                .
+              </div>
+              <div class="photoshoot__image"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End::Photoshot Section -->
+
+      <!-- Start::Magazine Section -->
+      <section class="section-magazine">
+        <div class="magazine"></div>
+      </section>
+      <!-- End::Magazine Section -->
+    </main>
 
     <!-- Start::Footer -->
     <footer></footer>
