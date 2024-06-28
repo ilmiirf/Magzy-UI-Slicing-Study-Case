@@ -44,9 +44,9 @@ License: -
   </head>
 
   <body class="home-page">
-    <!-- Start::Header Section -->
-    <header class="header">
-      <div class="navigation">
+
+    <header class="header ">
+      <div class="navigation container">
         <nav class="navigation__menu">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -61,6 +61,11 @@ License: -
             <li class="navigation__item">
               <a href="#" class="navigation__link">Gallery</a>
             </li>
+            <li class="navigation__item nav-item dropdown"></li>
+              <a class="navigation__link" data-bs-toggle="collapse" href="#collapseDrpdown" role="button" aria-expanded="false" aria-controls="collapseDropdown">
+                All page <i class="bi bi-chevron-down"></i>
+              </a>
+            </li>
           </ul>
         </nav>
         <div class="navigation__logo">
@@ -71,27 +76,44 @@ License: -
           <div class="button-text button-text--normal">SUBSCRIBE</div>
         </div>
       </div>
+      <div class="collapse navigation__dropdown" id="collapseDrpdown">
+        <ul class="container">
+          <li class="navigation__item-dropdown ">
+            <a href="#" class="navigation__link active">News</a>
+          </li>
+          <li class="navigation__item-dropdown">
+            <a href="#" class="navigation__link">News</a>
+          </li>
+        </ul>
+      </div>
+      
     </header>
-    <!-- End::Header Section -->
 
     <main>
       <!-- Start::Hero Section -->
-      <section class="section-heroes">
-        <div class="hero">
+      <section class="section-heroes ">
+        <div class="hero container">
           <div class="hero__title">
-            <span class="title1 title1--hc">Magzy</span>
-            <span class="title4 title4--lc">Magazine</span>
+       
+            <p class="title1 title1--hc">M</p>
+            <p class="title1 title1--hc">a</p>
+            <p class="title1 title1--hc">g</p>
+            <p class="title1 title1--hc">z</p>
+            <p class="title1 title1--hc">y</p>
+
+            <p class="title4 title4--lc">Magazine</p>
           </div>
-          <div class="hero__image">
-            <img src="assets/media/images/hero.png" alt="hero" />
-          </div>
+          
+        </div>
+        <div class="hero__image">
+          <img src="assets/media/images/hero.png" alt="hero" />
         </div>
       </section>
       <!-- End::Hero Section -->
 
       <!-- Start::Features Section -->
-      <section class="section-features">
-        <div class="feature">
+      <section class="section-features ">
+        <div class="feature container">
           <div class="feature__slide-list">
             <div class="feature__slide-item">
               <div class="feature__image">
@@ -139,31 +161,35 @@ License: -
               </div>
             </div>
           </div>
-          <div class="feature__image-side">
-            <img
-              src="assets/media/images/featured-image-hide.png"
-              alt="feature"
-            />
-          </div>
+          
+        </div>
+        <div class="feature__image-side">
+          <img
+            src="assets/media/images/featured-image-hide.png"
+            alt="feature"
+          />
         </div>
       </section>
       <!-- End::Features Section -->
 
       <!-- Start::Stories Section -->
-      <section class="section-stories">
-        <div class="story">
+      <section class="section-stories ">
+        <div class="story container">
           <div class="section__title">
             <div>
               <span class="title2 title2--lc">Today's </span>
               <span class="title2 title2--hc">Stories</span>
             </div>
             <a class="button-link h4 h4--lc">
-              view all <i class="bi bi-arrow-up-right"></i
+              <p>view all</p> <i class="bi bi-arrow-up-right"></i
             ></a>
           </div>
           <div class="story__content">
             <div class="story__item-1 blog blog--block">
-              <img src="assets/media/images/story1.png" alt="story" />
+              <div class="blog__image">
+                <img src="assets/media/images/story1.png" alt="story" />
+              </div>
+              
               <div class="blog__content">
                 <div class="blog__meta">
                   <div class="tag tag--dark">
@@ -173,13 +199,15 @@ License: -
                 </div>
                 <div class="blog__title">
                   <h3 class="h3 h3--lc">
-                    What Street Fashion Was Like a Decade Ago
+                    What Street Fashion Was Like a Decade Ago a Decade Ago Like
                   </h3>
                 </div>
               </div>
             </div>
             <div class="story__item-2 blog blog--inline">
+             <div class="blog__image">
               <img src="assets/media/images/story2.png" alt="story" />
+             </div>
               <div class="blog__content">
                 <div class="blog__meta">
                   <div class="tag tag--dark">
@@ -195,7 +223,10 @@ License: -
               </div>
             </div>
             <div class="story__item-3 blog blog--inline">
-              <img src="assets/media/images/story3.png" alt="story" />
+              <div class="blog__image">
+                <img src="assets/media/images/story3.png" alt="story" />
+              </div>
+              
               <div class="blog__content">
                 <div class="blog__meta">
                   <div class="tag tag--dark">
@@ -217,15 +248,15 @@ License: -
       <!-- End::Stories Section -->
 
       <!-- Start::Even List Section -->
-      <section class="section-event-list">
-        <div class="event-list">
+      <section class="section-event-list ">
+        <div class="event-list container">
           <div class="event-list__title section__title">
             <div>
               <span class="title2 title2--lc">Event </span>
               <span class="title2 title2--hc">List</span>
             </div>
             <a class="button-link button-link--dark h4 h4--lc">
-              view all <i class="bi bi-arrow-up-right"></i
+              <p>view all</p><i class="bi bi-arrow-up-right"></i
             ></a>
           </div>
           <div class="event-list__dates">
@@ -235,36 +266,110 @@ License: -
             </div>
             <div class="button-tab h4 h4--lc">22.03.2023</div>
             <div class="button-tab h4 h4--lc">23.03.2023</div>
-            <div class="button-tab h4 h4--lc">24.03.2023</div>
+            
           </div>
           <div class="event-list__content">
-            <img src="assets/media/images/event-list1.png" alt="event" />
-
-            <div class="event-list__detail">TODO EVENT CARD</div>
+            <div class="event-list__image">
+              <img src="assets/media/images/event-list1.png" alt="event" />
+            </div>
+            <div class="event-list__info">
+              <div class="event-list__info__detail">
+                <p class="h4 h4--lc">04.05.2023</p>
+                <p class="h1 h1--lc">Urban Runaway</p>
+                <p class="h4 h4--hc">
+                  A fashionable street event
+                </p>
+                <div class="button-link-text">
+                  <p class="button-text button-text--xl">Get Ticket Now</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="event-list__addition">
+                <div class="infinite-tricker"></div>
+            </div>
           </div>
         </div>
       </section>
       <!-- End::Even List Section -->
 
       <!-- Start::Photoshot Section -->
-      <section class="section-phooshoot">
-        <div class="phooshoot">
+      <section class="section-photoshoot ">
+        <div class="photoshoot container">
           <div class="phothoshoot__title section__title">
             <div>
               <span class="title2 title2--lc">fashion </span>
-              <span class="title2 title2--hc">photoshoot</span>
+            <span class="title2 title2--hc">photoshoot</span> 
             </div>
             <a class="button-link button-link--dark h4 h4--lc">
-              view all <i class="bi bi-arrow-up-right"></i
+              <p>view all</p><i class="bi bi-arrow-up-right"></i
             ></a>
           </div>
           <div class="photoshoot__content">
             <div class="photoshoot__wrapper">
-              <div class="photoshoot__info">
-                <div class="h4 h4--lc">Photo of Fashion Model Nicole Black at Del Mar Villa in Dundee Oregon</div>
-                .
+              <div class="photoshoot__left">
+                <div class="photoshoot__info">
+                  <div class="h4 h4--lc">
+                    Photo of Fashion Model Nicole Black at Del Mar Villa in
+                    Dundee Oregon
+                  </div>
+                  <div class="photoshoot__info__item">
+                    <p class="text-normal text-normal--light">
+                      Creative Direction
+                    </p>
+                    <p class="text-normal text-normal--medium">Marne Swartch</p>
+                  </div>
+                  <div class="photoshoot__info__item">
+                    <p class="text-normal text-normal--light">
+                      Creative Direction
+                    </p>
+                    <p class="text-normal text-normal--medium">Marne Swartch</p>
+                  </div>
+                  <div class="photoshoot__info__item">
+                    <p class="text-normal text-normal--light">
+                      Creative Direction
+                    </p>
+                    <p class="text-normal text-normal--medium">Marne Swartch</p>
+                  </div>
+                  <div class="photoshoot__info__item">
+                    <p class="text-normal text-normal--light">
+                      Creative Direction
+                    </p>
+
+                    <p class="text-normal text-normal--medium">Marne Swartch</p>
+                  </div>
+                  <div class="photoshoot__info__item">
+                    <p class="text-normal text-normal--light">
+                      Creative Direction
+                    </p>
+
+                    <p class="text-normal text-normal--medium">Marne Swartch</p>
+                  </div>
+                </div>
+                <div class="button-link-text">
+                  <p class="button-text button-text--normal">View more</p>
+                </div>
               </div>
-              <div class="photoshoot__image"></div>
+              <div class="photoshoot__right">
+                <div class="photoshoot__image">
+                  <img
+                    src="assets/media/images/photoshoot-1-1.png"
+                    alt="photoshoot"
+                  /> 
+                </div>
+                <div class="photoshoot__image">
+                  <img
+                    src="assets/media/images/photoshoot-1-2.png"
+                    alt="photoshoot"
+                  />
+                </div>
+                <div class="photoshoot__image">
+                  <img
+                    src="assets/media/images/photoshoot-1-3.png"
+                    alt="photoshoot"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -273,13 +378,113 @@ License: -
 
       <!-- Start::Magazine Section -->
       <section class="section-magazine">
-        <div class="magazine"></div>
+        <div class="magazine container">
+          <div class="magazine__title section__title">
+            <div>
+              <span class="title2 title2--lc">Magazine </span>
+              <span class="title2 title2--hc">Collections</span>
+            </div>
+          </div>
+          <div class="magazine__content">
+            <div class="magazine__wrapper">
+              <div class="magazine__image">
+                <img src="assets/media/images/magazine-1.png" alt="magazine" />
+              </div>
+              <div class="magazine__info">
+                <p class="h5 h5--lc">Magzy 10 - Classic style</p>
+                <p class="text-large text-large--regular">$10</p>
+              </div>
+            </div>
+            <div class="magazine__wrapper">
+              <div class="magazine__image">
+                <img src="assets/media/images/magazine-2.png" alt="magazine" />
+              </div>
+              <div class="magazine__info">
+                <p class="h5 h5--lc">Magzy 9 - Classic style</p>
+                <p class="text-large text-large--regular">$10</p>
+              </div>
+            </div>
+            <div class="magazine__wrapper">
+              <div class="magazine__image">
+                <img src="assets/media/images/magazine-3.png" alt="magazine" />
+              </div>
+              <div class="magazine__info">
+                <p class="h5 h5--lc">Magzy 8 - Classic style</p>
+                <p class="text-large text-large--regular">$10</p>
+              </div>
+            </div>
+          </div>
+          <div class="button-link-text">
+            <p class="button-text button-text--xl">View Marketplace</p>
+          </div>
+        </div>
       </section>
       <!-- End::Magazine Section -->
     </main>
 
     <!-- Start::Footer -->
-    <footer></footer>
+    <footer class="section-footer">
+      <div class="footer container">
+        <div class="footer__top">
+          <div class="footer__left-top">
+            <div class="footer__title">
+              <p class="title2 title2--lc">Subscribe <span>NOW</span></p>
+            </div>
+            <div class="footer__form">
+              <input
+                type="text"
+                placeholder="E-MAIL ADDRESS"
+                class="footer__form__input text-xl text-xl--medium"
+              />
+              <button class="footer__form__button text-large text-large--medium">Subscribe</button>
+            </div>
+          </div>
+          <div class="footer__left-bottom">
+            <p class="h2 h2--hc">MAGZY</p>
+            <p class="text-normal text-normal--regular">Magzy has the most recent information on fashion, beauty, celebrity style, fashion week updates, reviews of popular culture, and videos.</p>
+          </div>
+          <div class="footer__right">
+            <div class="footer__image">
+              <img src="assets/media/images/footer.png" alt="footer" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__menu">
+            <p class="h5 h5--lc">menu</p>
+            <div class="footer__item">
+              <p class="text-normal text-normal--regular">Fashion</p>
+              <p class="text-normal text-normal--regular">Celebrity</p>
+              <p class="text-normal text-normal--regular">Lifestyle</p>
+              <p class="text-normal text-normal--regular">Events</p>
+              <p class="text-normal text-normal--regular">Gallery</p>
+              <p class="text-normal text-normal--regular">About</p>
+              <p class="text-normal text-normal--regular">Privacy Policy</p>
+              <p class="text-normal text-normal--regular">Faq</p>
+            </div>
+          </div>
+          <div class="footer__menu">
+            <p class="h5 h5--lc">menu</p>
+            <div class="footer__item">
+              <p class="text-normal text-normal--regular">Fashion</p>
+              <p class="text-normal text-normal--regular">Celebrity</p>
+              <p class="text-normal text-normal--regular">Lifestyle</p>
+              <p class="text-normal text-normal--regular">Events</p>
+              
+            </div>
+          </div>
+          <div class="footer__menu">
+            <p class="h5 h5--lc">menu</p>
+            <div class="footer__item">
+              <p class="text-normal text-normal--regular">Fashion</p>
+              <p class="text-normal text-normal--regular">Celebrity</p>
+              <p class="text-normal text-normal--regular">Lifestyle</p>
+              <p class="text-normal text-normal--regular">Events</p>
+              
+            </div>
+          </div>
+        </div>
+    </footer>
     <!-- End::Footer -->
 
     <!-- Start::Global Bundle Scripts (used by all pages) -->
