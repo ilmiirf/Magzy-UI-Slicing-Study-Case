@@ -7,4 +7,11 @@
   > a {
     margin-bottom: 20px;
   }
+
+  @include media-breakpoint-down(lg) {
+    align-items: start;
+    > a > p {
+      display: none;
+    }
+  }
 }
