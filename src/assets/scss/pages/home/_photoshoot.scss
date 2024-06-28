@@ -1,2 +1,78 @@
+.section-photoshoot {
+  background-color: $neutral-bg-light;
+}
+
 .photoshoot {
+  padding-block: 120px;
+
+  &__wrapper {
+    margin-top: 56px;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    height: 424px;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+  }
+
+  &__left {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+    gap: 16px;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__item {
+      display: flex;
+      gap: 12px;
+
+      > .text-normal--light {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__right {
+    width: 75%;
+    display: flex;
+    gap: 16px;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      height: auto;
+    }
+  }
 }

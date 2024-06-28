@@ -1,14 +1,21 @@
 .home-page {
+  .section-features {
+    height: fit-content;
+    position: relative;
+  }
   .feature {
     width: 100%;
     height: fit-content;
-    padding-inline: 76px;
     padding-block: 120px;
     color: $neutral-text-dark;
     position: relative;
-
     display: flex;
     gap: 56px;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      gap: 0;
+    }
 
     &__slide-list {
       width: 100%;
@@ -25,15 +32,24 @@
       gap: 56px;
       padding-bottom: 24px;
       flex: 1;
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+      }
     }
 
     &__image {
       width: 50%;
       aspect-ratio: 5/6;
+      transition: all 0.3s;
 
       > img {
         width: 100%;
         object-fit: cover;
+      }
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
       }
     }
 
@@ -48,11 +64,23 @@
       > .blog__content {
         width: 90%;
       }
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        > .blog__content {
+          width: 100%;
+        }
+      }
     }
 
     &__description {
       width: 70%;
       align-self: flex-end;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        align-self: flex-start;
+      }
     }
 
     &__right-side {
@@ -71,11 +99,17 @@
       right: 0;
 
       height: 400px;
+      z-index: -1;
 
       > img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+        visibility: hidden;
       }
     }
   }
