@@ -1,0 +1,125 @@
+.footer {
+  padding-block: 120px;
+
+  &__top {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 1fr 30%;
+    // grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  &__left-top {
+    grid-column: 1/2;
+    width: 100%;
+    min-width: 850px;
+    position: relative;
+  }
+
+  &__title {
+    text-transform: uppercase;
+
+    > p {
+      font-size: 240px !important;
+    }
+  }
+
+  &__form {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-70%);
+    display: flex;
+
+    &__input {
+      height: 64px;
+      width: 400px;
+      border: none;
+      border-top: 1px solid $neutral-gray;
+      border-bottom: 1px solid $neutral-gray;
+      padding-inline: 16px;
+      background: transparent;
+
+      &::placeholder {
+        text-transform: uppercase;
+        color: rgba($neutral-text-dark, 0.4);
+      }
+
+      &:focus {
+        border-color: $brand-primary;
+        outline: none;
+      }
+    }
+
+    &__button {
+      height: 64px;
+      border: none;
+      background: $brand-primary;
+      color: $neutral-text-white;
+      text-transform: uppercase;
+    }
+  }
+
+  &__left-bottom {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    gap: 350px;
+    padding-block: 36px;
+
+    border-top: 1px solid $neutral-gray;
+    border-bottom: 1px solid $neutral-gray;
+
+    > .h2 {
+      color: $brand-primary;
+    }
+
+    > .text-normal {
+      width: 300px;
+    }
+  }
+
+  &__right {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    > img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 56px;
+
+    border-bottom: 1px solid $neutral-gray;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 32px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 154px;
+    gap: 16px 24px;
+
+    & > * {
+      width: max-content;
+    }
+  }
+}
