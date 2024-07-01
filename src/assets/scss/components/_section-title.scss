@@ -4,8 +4,14 @@
   justify-content: space-between;
   align-items: end;
 
+  > div {
+    min-width: min-content;
+    max-width: max-content;
+  }
+
   > a {
     margin-bottom: 20px;
+    width: fit-content;
   }
 
   @include media-breakpoint-down(lg) {
