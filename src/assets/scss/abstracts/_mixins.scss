@@ -53,8 +53,10 @@
   font-size: $font-size;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
+  font-weight: 500;
+  color: inherit;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(lg) {
     font-size: $mobile-font-size;
     line-height: $mobile-line-height;
     letter-spacing: $mobile-letter-spacing;

@@ -104,17 +104,17 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1240px,
+  sm: 767px,
+  md: 767px,
+  lg: 991px,
+  xl: 1440px,
+  xxl: 1440px,
 );
 // scss-docs-end container-max-widths
 
 // Container padding
 
-$container-padding-x: toRem(40);
+$container-padding-x: toRem(48);
 
 // Body
 
