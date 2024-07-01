@@ -16,20 +16,47 @@
   height: toRem(72);
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+
+  &__mobile-menu {
+    display: none;
+    @include media-breakpoint-down(lg) {
+      display: block;
+      font-size: 28px;
+    }
+  }
 
   &__menu {
     display: flex;
     justify-content: space-between;
-
     width: 100%;
+
+    @include media-breakpoint-down(lg) {
+      transition: all 0.5s ease-out;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      width: 100%;
+      background-color: $neutral-bg;
+      padding: 8px 24px;
+      min-height: 100vh;
+      height: 100%;
+      overflow-y: auto;
+    }
   }
 
   &__list {
+    width: 100%;
     display: flex;
     justify-content: start;
     gap: 6px;
     margin: 0 0 0 0 !important;
     padding: 0 0 0 0 !important;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__item {
@@ -46,14 +73,25 @@
     &:first-child::before {
       content: none;
     }
+
+    @include media-breakpoint-down(lg) {
+      border-bottom: 1px solid $neutral-gray;
+      width: 100%;
+      padding: 8px 0;
+      &::before {
+        content: "";
+      }
+
+      > a {
+        font-family: "ThunderLC" !important;
+        font-weight: 400 !important;
+        font-size: 40px;
+      }
+    }
   }
 
   &__link {
     color: $neutral-text-dark !important;
-
-    &:focus {
-      color: $primary !important;
-    }
 
     &:hover {
       color: $secondary !important;
@@ -67,6 +105,7 @@
     height: fit-content;
     gap: 8px;
     color: $primary;
+    max-width: 100%;
     width: 100%;
   }
 
@@ -86,6 +125,35 @@
     width: 100%;
     position: inherit;
     background: inherit;
+    margin-top: 1px;
+    padding-block: 20px;
+
+    border-bottom: 1px solid $neutral-gray;
+    display: block;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include media-breakpoint-down(lg) {
+        display: block;
+        height: auto;
+      }
+    }
+  }
+
+  &__list-dropdown {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 12px;
+    grid-auto-flow: row;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item-dropdown {
@@ -93,5 +161,9 @@
     padding-left: 2px;
     color: $neutral-text-dark;
     content: none;
+  }
+
+  &__active {
+    color: $brand-primary !important;
   }
 }
