@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--
+<!--
 Template Name: - 
 Author: -
 Website: -
@@ -8,490 +8,529 @@ Contact: -
 License: -
 -->
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack HTML Starter Template</title>
-    <link rel="shortcut icon" href="" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webpack HTML Starter Template</title>
+  <link rel="shortcut icon" href="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
 
-    <!-- <link rel="stylesheet" href="assets/scss/styles.css" /> -->
+  <!-- <link rel="stylesheet" href="assets/scss/styles.css" /> -->
 
-    <!-- Start::Global Styles (used by all pages) -->
-    <link
-      href="assets/css/styles.bundle.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- End::Global Styles -->
-    <!-- Start::Page Styles (used by this page) -->
-    <link
-      href="assets/css/pages/home-v1.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- End::Page Styles -->
+  <!-- Start::Global Styles (used by all pages) -->
+  <link href="assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- End::Global Styles -->
+  <!-- Start::Page Styles (used by this page) -->
+  <link href="assets/css/pages/home-v1.css" rel="stylesheet" type="text/css" />
+  <!-- End::Page Styles -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
 
-  <body class="home-page">
+<body class="home-page">
 
-    <header class="header ">
-      <div class="navigation container">
-        <nav class="navigation__menu">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">News</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Events</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Shop</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Gallery</a>
-            </li>
-            <li class="navigation__item nav-item dropdown"></li>
-              <a class="navigation__link" data-bs-toggle="collapse" href="#collapseDrpdown" role="button" aria-expanded="false" aria-controls="collapseDropdown">
-                All page <i class="bi bi-chevron-down"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="navigation__logo">
-          <img src="assets/media/images/logo-small.png" alt="logo" />
-        </div>
-        <div class="navigation__action">
-          <i class="bi bi-cart3 navigation__icon-cart"></i>
-          <div class="button-text button-text--normal">SUBSCRIBE</div>
-        </div>
+  <header class="header">
+    <div class="navigation container-lg">
+      <div class="navigation__mobile-menu" data-bs-toggle="collapse" href="#collapseBtnMenu" role="button" aria-expanded="false" aria-controls="collapseBtnMenu">
+        <i class="bi bi-list"></i>
       </div>
-      <div class="collapse navigation__dropdown" id="collapseDrpdown">
-        <ul class="container">
-          <li class="navigation__item-dropdown ">
-            <a href="#" class="navigation__link active">News</a>
-          </li>
-          <li class="navigation__item-dropdown">
+      <nav class="navigation__menu collapse" id="collapseBtnMenu">
+        <ul class="navigation__list">
+          <li class="navigation__item">
             <a href="#" class="navigation__link">News</a>
           </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Events</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Shop</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Gallery</a>
+          </li>
+          <li class="navigation__item nav-item dropdown">
+            <a class="navigation__link" data-bs-toggle="collapse" href="#collapseDrpdown" role="button" aria-expanded="false" aria-controls="collapseDropdown">
+              All page <i class="bi bi-chevron-down"></i>
+            </a>
+          </li>
+          <div class="collapse navigation__dropdown navigation__dropdown--mobile" id="collapseDrpdown">
+            <ul class="navigation__list-dropdown container-lg">
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link navigation__active">Home</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Stories</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Event</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Shop</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Gallery</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Cart</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">about</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Contact</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Checkout</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">401</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">404</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Order Comfirmation</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Changelog</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Style Guide</a>
+              </li>
+              <li class="navigation__item-dropdown">
+                <a href="#" class="navigation__link">Lisence</a>
+              </li>
+            </ul>
+          </div>
         </ul>
+      </nav>
+      <div class="navigation__logo">
+        <img src="assets/media/images/logo-small.png" alt="logo" />
       </div>
-      
-    </header>
+      <div class="navigation__action">
+        <i class="bi bi-cart3 navigation__icon-cart"></i>
+        <div class="button-text button-text--normal">SUBSCRIBE</div>
+      </div>
+    </div>
 
-    <main>
-      <!-- Start::Hero Section -->
-      <section class="section-heroes ">
-        <div class="hero container">
-          <div class="hero__title">
-       
-            <p class="title1 title1--hc">M</p>
-            <p class="title1 title1--hc">a</p>
-            <p class="title1 title1--hc">g</p>
-            <p class="title1 title1--hc">z</p>
+    <div class="collapse navigation__dropdown" id="collapseDrpdown">
+      <ul class="navigation__list-dropdown container-lg">
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link navigation__active">Home</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Stories</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Event</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Shop</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Gallery</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Cart</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">about</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Contact</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Checkout</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">401</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">404</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Order Comfirmation</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Changelog</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Style Guide</a>
+        </li>
+        <li class="navigation__item-dropdown">
+          <a href="#" class="navigation__link">Lisence</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Start::Hero Section -->
+    <section class="section-heroes ">
+      <div class="hero container-lg">
+        <div class="hero__title">
+          <p class="title1 title1--hc">M</p>
+          <p class="title1 title1--hc">a</p>
+          <p class="title1 title1--hc">g</p>
+          <p class="title1 title1--hc">z</p>
+          <div class="hero__title-y">
             <p class="title1 title1--hc">y</p>
-
             <p class="title4 title4--lc">Magazine</p>
           </div>
-          
-        </div>
-        <div class="hero__image">
-          <img src="assets/media/images/hero.png" alt="hero" />
-        </div>
-      </section>
-      <!-- End::Hero Section -->
 
-      <!-- Start::Features Section -->
-      <section class="section-features ">
-        <div class="feature container">
-          <div class="feature__slide-list">
-            <div class="feature__slide-item">
-              <div class="feature__image">
-                <img
-                  src="assets/media/images/featured-post1.png"
-                  alt="feature"
-                />
-              </div>
+        </div>
 
-              <div class="feature__content blog">
-                <div class="blog__content">
-                  <div class="blog__meta">
-                    <div class="tag tag--light">
-                      <p class="text-normal--medium">fashion</p>
-                    </div>
-                    <p class="text-normal--regular">Aug 8, 2022</p>
+      </div>
+      <div class="hero__image">
+        <img src="assets/media/images/hero.png" alt="hero" />
+      </div>
+    </section>
+    <!-- End::Hero Section -->
+
+    <!-- Start::Features Section -->
+    <section class="section-features ">
+      <div class="feature container-lg">
+        <div class="feature__slide-list">
+          <div class="feature__slide-item">
+            <div class="feature__image">
+              <img src="assets/media/images/featured-post1.png" alt="feature" />
+            </div>
+
+            <div class="feature__content blog">
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="tag tag--light">
+                    <p class="text-normal--medium">fashion</p>
                   </div>
-                  <div class="blog__title">
-                    <p class="h2 h2--lc">
-                      The Manhattan STREET Show included a lot of eccentric
-                      fashion.
-                    </p>
-                  </div>
+                  <p class="text-normal--regular">Aug 8, 2022</p>
                 </div>
-                <div class="feature__description">
-                  <p class="text-large--regular">
-                    Despite the cold weather, shoppers lined up outside the
-                    Manhattan Vintage Show last Friday. Co-owner Amy Abrams said
-                    they had vintage items for all eras and price points,
-                    including clothing and accessories. The shoppers were there
-                    for the triennial event, hoping to find 1950s outfits or a
-                    Versace leather jacket
+                <div class="blog__title">
+                  <p class="h2 h2--lc">
+                    The Manhattan STREET Show included a lot of eccentric
+                    fashion.
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="feature__right-side">
-            <div class="button-slider-box">
-              <div class="button-icon button-icon--large" id="prev-option">
-                <i class="bi bi-arrow-left"></i>
-              </div>
-              <div class="button-icon button-icon--large" id="next-option">
-                <i class="bi bi-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="feature__image-side">
-          <img
-            src="assets/media/images/featured-image-hide.png"
-            alt="feature"
-          />
-        </div>
-      </section>
-      <!-- End::Features Section -->
-
-      <!-- Start::Stories Section -->
-      <section class="section-stories ">
-        <div class="story container">
-          <div class="section__title">
-            <div>
-              <span class="title2 title2--lc">Today's </span>
-              <span class="title2 title2--hc">Stories</span>
-            </div>
-            <a class="button-link h4 h4--lc">
-              <p>view all</p> <i class="bi bi-arrow-up-right"></i
-            ></a>
-          </div>
-          <div class="story__content">
-            <div class="story__item-1 blog blog--block">
-              <div class="blog__image">
-                <img src="assets/media/images/story1.png" alt="story" />
-              </div>
-              
-              <div class="blog__content">
-                <div class="blog__meta">
-                  <div class="tag tag--dark">
-                    <p class="text-normal--medium">fashion</p>
-                  </div>
-                  <p class="text-normal--regular">Aug 10, 2022</p>
-                </div>
-                <div class="blog__title">
-                  <h3 class="h3 h3--lc">
-                    What Street Fashion Was Like a Decade Ago a Decade Ago Like
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="story__item-2 blog blog--inline">
-             <div class="blog__image">
-              <img src="assets/media/images/story2.png" alt="story" />
-             </div>
-              <div class="blog__content">
-                <div class="blog__meta">
-                  <div class="tag tag--dark">
-                    <p class="text-normal--medium">fashion</p>
-                  </div>
-                  <p class="text-normal--regular">Aug 10, 2022</p>
-                </div>
-                <div class="blog__title">
-                  <h3 class="h3 h3--lc">
-                    Men, promise, skirts aren't that scary!
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="story__item-3 blog blog--inline">
-              <div class="blog__image">
-                <img src="assets/media/images/story3.png" alt="story" />
-              </div>
-              
-              <div class="blog__content">
-                <div class="blog__meta">
-                  <div class="tag tag--dark">
-                    <p class="text-normal--medium">fashion</p>
-                  </div>
-                  <p class="text-normal--regular">Aug 10, 2022</p>
-                </div>
-                <div class="blog__title">
-                  <h3 class="h3 h3--lc">
-                    The Best Copenhagen Street Style Photos From the Fall 2023
-                    Season
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End::Stories Section -->
-
-      <!-- Start::Even List Section -->
-      <section class="section-event-list ">
-        <div class="event-list container">
-          <div class="event-list__title section__title">
-            <div>
-              <span class="title2 title2--lc">Event </span>
-              <span class="title2 title2--hc">List</span>
-            </div>
-            <a class="button-link button-link--dark h4 h4--lc">
-              <p>view all</p><i class="bi bi-arrow-up-right"></i
-            ></a>
-          </div>
-          <div class="event-list__dates">
-            <div class="button-tab h4 h4--lc">20.03.2023</div>
-            <div class="button-tab button-tab--active h4 h4--lc">
-              21.03.2023
-            </div>
-            <div class="button-tab h4 h4--lc">22.03.2023</div>
-            <div class="button-tab h4 h4--lc">23.03.2023</div>
-            
-          </div>
-          <div class="event-list__content">
-            <div class="event-list__image">
-              <img src="assets/media/images/event-list1.png" alt="event" />
-            </div>
-            <div class="event-list__info">
-              <div class="event-list__info__detail">
-                <p class="h4 h4--lc">04.05.2023</p>
-                <p class="h1 h1--lc">Urban Runaway</p>
-                <p class="h4 h4--hc">
-                  A fashionable street event
+              <div class="feature__description">
+                <p class="text-large--regular">
+                  Despite the cold weather, shoppers lined up outside the
+                  Manhattan Vintage Show last Friday. Co-owner Amy Abrams said
+                  they had vintage items for all eras and price points,
+                  including clothing and accessories. The shoppers were there
+                  for the triennial event, hoping to find 1950s outfits or a
+                  Versace leather jacket
                 </p>
-                <div class="button-link-text">
-                  <p class="button-text button-text--xl">Get Ticket Now</p>
-                </div>
-              </div>
-              
-            </div>
-            <div class="event-list__addition">
-                <div class="infinite-tricker"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End::Even List Section -->
-
-      <!-- Start::Photoshot Section -->
-      <section class="section-photoshoot ">
-        <div class="photoshoot container">
-          <div class="phothoshoot__title section__title">
-            <div>
-              <span class="title2 title2--lc">fashion </span>
-            <span class="title2 title2--hc">photoshoot</span> 
-            </div>
-            <a class="button-link button-link--dark h4 h4--lc">
-              <p>view all</p><i class="bi bi-arrow-up-right"></i
-            ></a>
-          </div>
-          <div class="photoshoot__content">
-            <div class="photoshoot__wrapper">
-              <div class="photoshoot__left">
-                <div class="photoshoot__info">
-                  <div class="h4 h4--lc">
-                    Photo of Fashion Model Nicole Black at Del Mar Villa in
-                    Dundee Oregon
-                  </div>
-                  <div class="photoshoot__info__item">
-                    <p class="text-normal text-normal--light">
-                      Creative Direction
-                    </p>
-                    <p class="text-normal text-normal--medium">Marne Swartch</p>
-                  </div>
-                  <div class="photoshoot__info__item">
-                    <p class="text-normal text-normal--light">
-                      Creative Direction
-                    </p>
-                    <p class="text-normal text-normal--medium">Marne Swartch</p>
-                  </div>
-                  <div class="photoshoot__info__item">
-                    <p class="text-normal text-normal--light">
-                      Creative Direction
-                    </p>
-                    <p class="text-normal text-normal--medium">Marne Swartch</p>
-                  </div>
-                  <div class="photoshoot__info__item">
-                    <p class="text-normal text-normal--light">
-                      Creative Direction
-                    </p>
-
-                    <p class="text-normal text-normal--medium">Marne Swartch</p>
-                  </div>
-                  <div class="photoshoot__info__item">
-                    <p class="text-normal text-normal--light">
-                      Creative Direction
-                    </p>
-
-                    <p class="text-normal text-normal--medium">Marne Swartch</p>
-                  </div>
-                </div>
-                <div class="button-link-text">
-                  <p class="button-text button-text--normal">View more</p>
-                </div>
-              </div>
-              <div class="photoshoot__right">
-                <div class="photoshoot__image">
-                  <img
-                    src="assets/media/images/photoshoot-1-1.png"
-                    alt="photoshoot"
-                  /> 
-                </div>
-                <div class="photoshoot__image">
-                  <img
-                    src="assets/media/images/photoshoot-1-2.png"
-                    alt="photoshoot"
-                  />
-                </div>
-                <div class="photoshoot__image">
-                  <img
-                    src="assets/media/images/photoshoot-1-3.png"
-                    alt="photoshoot"
-                  />
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End::Photoshot Section -->
-
-      <!-- Start::Magazine Section -->
-      <section class="section-magazine">
-        <div class="magazine container">
-          <div class="magazine__title section__title">
-            <div>
-              <span class="title2 title2--lc">Magazine </span>
-              <span class="title2 title2--hc">Collections</span>
+        <div class="feature__right-side">
+          <div class="button-slider-box">
+            <div class="button-icon button-icon--large" id="prev-option">
+              <i class="bi bi-arrow-left"></i>
             </div>
-          </div>
-          <div class="magazine__content">
-            <div class="magazine__wrapper">
-              <div class="magazine__image">
-                <img src="assets/media/images/magazine-1.png" alt="magazine" />
-              </div>
-              <div class="magazine__info">
-                <p class="h5 h5--lc">Magzy 10 - Classic style</p>
-                <p class="text-large text-large--regular">$10</p>
-              </div>
-            </div>
-            <div class="magazine__wrapper">
-              <div class="magazine__image">
-                <img src="assets/media/images/magazine-2.png" alt="magazine" />
-              </div>
-              <div class="magazine__info">
-                <p class="h5 h5--lc">Magzy 9 - Classic style</p>
-                <p class="text-large text-large--regular">$10</p>
-              </div>
-            </div>
-            <div class="magazine__wrapper">
-              <div class="magazine__image">
-                <img src="assets/media/images/magazine-3.png" alt="magazine" />
-              </div>
-              <div class="magazine__info">
-                <p class="h5 h5--lc">Magzy 8 - Classic style</p>
-                <p class="text-large text-large--regular">$10</p>
-              </div>
-            </div>
-          </div>
-          <div class="button-link-text">
-            <p class="button-text button-text--xl">View Marketplace</p>
-          </div>
-        </div>
-      </section>
-      <!-- End::Magazine Section -->
-    </main>
-
-    <!-- Start::Footer -->
-    <footer class="section-footer">
-      <div class="footer container">
-        <div class="footer__top">
-          <div class="footer__left-top">
-            <div class="footer__title">
-              <p class="title2 title2--lc">Subscribe <span>NOW</span></p>
-            </div>
-            <div class="footer__form">
-              <input
-                type="text"
-                placeholder="E-MAIL ADDRESS"
-                class="footer__form__input text-xl text-xl--medium"
-              />
-              <button class="footer__form__button text-large text-large--medium">Subscribe</button>
-            </div>
-          </div>
-          <div class="footer__left-bottom">
-            <p class="h2 h2--hc">MAGZY</p>
-            <p class="text-normal text-normal--regular">Magzy has the most recent information on fashion, beauty, celebrity style, fashion week updates, reviews of popular culture, and videos.</p>
-          </div>
-          <div class="footer__right">
-            <div class="footer__image">
-              <img src="assets/media/images/footer.png" alt="footer" />
+            <div class="button-icon button-icon--large" id="next-option">
+              <i class="bi bi-arrow-right"></i>
             </div>
           </div>
         </div>
-        <div class="footer__nav">
-          <div class="footer__menu">
-            <p class="h5 h5--lc">menu</p>
-            <div class="footer__item">
-              <p class="text-normal text-normal--regular">Fashion</p>
-              <p class="text-normal text-normal--regular">Celebrity</p>
-              <p class="text-normal text-normal--regular">Lifestyle</p>
-              <p class="text-normal text-normal--regular">Events</p>
-              <p class="text-normal text-normal--regular">Gallery</p>
-              <p class="text-normal text-normal--regular">About</p>
-              <p class="text-normal text-normal--regular">Privacy Policy</p>
-              <p class="text-normal text-normal--regular">Faq</p>
+
+      </div>
+      <div class="feature__image-side">
+        <img src="assets/media/images/featured-image-hide.png" alt="feature" />
+      </div>
+    </section>
+    <!-- End::Features Section -->
+
+    <!-- Start::Stories Section -->
+    <section class="section-stories ">
+      <div class="story container-lg">
+        <div class="section__title">
+          <div>
+            <span class="h1 h1--lc">Today's </span>
+            <span class="h1 h1--hc">Stories</span>
+          </div>
+          <a class="button-link h4 h4--lc">
+            <p>view all</p> <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+        <div class="story__content">
+          <div class="story__item-1 blog blog--block">
+            <div class="blog__image">
+              <img src="assets/media/images/story1.png" alt="story" />
+            </div>
+
+            <div class="blog__content">
+              <div class="blog__meta">
+                <div class="tag tag--dark">
+                  <p class="text-normal--medium">fashion</p>
+                </div>
+                <p class="text-normal--regular">Aug 10, 2022</p>
+              </div>
+              <div class="blog__title">
+                <h3 class="h3 h3--lc">
+                  What Street Fashion Was Like a Decade Ago a Decade Ago Like
+                </h3>
+              </div>
             </div>
           </div>
-          <div class="footer__menu">
-            <p class="h5 h5--lc">menu</p>
-            <div class="footer__item">
-              <p class="text-normal text-normal--regular">Fashion</p>
-              <p class="text-normal text-normal--regular">Celebrity</p>
-              <p class="text-normal text-normal--regular">Lifestyle</p>
-              <p class="text-normal text-normal--regular">Events</p>
-              
+          <div class="story__item-2 blog blog--inline">
+            <div class="blog__image">
+              <img src="assets/media/images/story2.png" alt="story" />
+            </div>
+            <div class="blog__content">
+              <div class="blog__meta">
+                <div class="tag tag--dark">
+                  <p class="text-normal--medium">fashion</p>
+                </div>
+                <p class="text-normal--regular">Aug 10, 2022</p>
+              </div>
+              <div class="blog__title">
+                <h3 class="h3 h3--lc">
+                  Men, promise, skirts aren't that scary!
+                </h3>
+              </div>
             </div>
           </div>
-          <div class="footer__menu">
-            <p class="h5 h5--lc">menu</p>
-            <div class="footer__item">
-              <p class="text-normal text-normal--regular">Fashion</p>
-              <p class="text-normal text-normal--regular">Celebrity</p>
-              <p class="text-normal text-normal--regular">Lifestyle</p>
-              <p class="text-normal text-normal--regular">Events</p>
-              
+          <div class="story__item-3 blog blog--inline">
+            <div class="blog__image">
+              <img src="assets/media/images/story3.png" alt="story" />
+            </div>
+
+            <div class="blog__content">
+              <div class="blog__meta">
+                <div class="tag tag--dark">
+                  <p class="text-normal--medium">fashion</p>
+                </div>
+                <p class="text-normal--regular">Aug 10, 2022</p>
+              </div>
+              <div class="blog__title">
+                <h3 class="h3 h3--lc">
+                  The Best Copenhagen Street Style Photos From the Fall 2023
+                  Season
+                </h3>
+              </div>
             </div>
           </div>
         </div>
-    </footer>
-    <!-- End::Footer -->
+      </div>
+    </section>
+    <!-- End::Stories Section -->
 
-    <!-- Start::Global Bundle Scripts (used by all pages) -->
-    <script src="assets/js/scripts.bundle.js"></script>
-    <!-- End::Global Bundle Scripts -->
-    <!-- Start::Page Scripts (used by this page) -->
-    <script src="assets/js/pages/home-v1.js"></script>
-    <!-- End::Page Scripts -->
-  </body>
+    <!-- Start::Even List Section -->
+    <section class="section-event-list ">
+      <div class="event-list container-lg">
+        <div class="event-list__title section__title">
+          <div>
+            <span class="h1 h1--lc">Event </span>
+            <span class="h1 h1--hc">List</span>
+          </div>
+          <a class="button-link button-link--dark h4 h4--lc">
+            <p>view all</p><i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+        <div class="event-list__dates">
+          <div class="button-tab h4 h4--lc">20.03.2023</div>
+          <div class="button-tab button-tab--active h4 h4--lc">
+            21.03.2023
+          </div>
+          <div class="button-tab h4 h4--lc">22.03.2023</div>
+          <div class="button-tab h4 h4--lc">23.03.2023</div>
+
+        </div>
+        <div class="event-list__content">
+          <div class="event-list__image">
+            <img src="assets/media/images/event-list1.png" alt="event" />
+          </div>
+          <div class="event-list__info">
+            <div class="event-list__info__detail">
+              <p class="h4 h4--lc">04.05.2023</p>
+              <p class="h1 h1--lc">Urban Runaway</p>
+              <p class="h4 h4--hc">
+                A fashionable street event
+              </p>
+              <div class="button-link-text">
+                <p class="button-text button-text--xl">Get Ticket Now</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="event-list__addition">
+            <div class="infinite-scroll">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End::Even List Section -->
+
+    <!-- Start::Photoshot Section -->
+    <section class="section-photoshoot ">
+      <div class="photoshoot container-lg">
+        <div class="phothoshoot__title section__title">
+          <div>
+            <span class="h1 h1--lc">fashion </span>
+            <span class="h1 h1--hc">photoshoot</span>
+          </div>
+          <a class="button-link button-link--dark h4 h4--lc">
+            <p>view all</p><i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+        <div class="photoshoot__content">
+          <div class="photoshoot__wrapper">
+            <div class="photoshoot__left">
+              <div class="photoshoot__info">
+                <div class="h4 h4--lc">
+                  Photo of Fashion Model Nicole Black at Del Mar Villa in
+                  Dundee Oregon
+                </div>
+                <div class="photoshoot__info__item">
+                  <p class="text-normal text-normal--light">
+                    Creative Direction
+                  </p>
+                  <div class="text-normal text-normal--medium">Marne Swartch</div>
+                </div>
+
+              </div>
+              <div class="button-link-text">
+                <p class="button-text button-text--normal">View more</p>
+              </div>
+            </div>
+            <div class="photoshoot__right">
+              <div class="photoshoot__image">
+                <img src="assets/media/images/photoshoot-1-1.png" alt="photoshoot" />
+              </div>
+              <div class="photoshoot__image">
+                <img src="assets/media/images/photoshoot-1-2.png" alt="photoshoot" />
+              </div>
+              <div class="photoshoot__image">
+                <img src="assets/media/images/photoshoot-1-3.png" alt="photoshoot" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End::Photoshot Section -->
+
+    <!-- Start::Magazine Section -->
+    <section class="section-magazine">
+      <div class="magazine container-lg">
+        <div class="magazine__title section__title">
+          <div>
+            <span class="h1 h1--lc">Magazine </span>
+            <span class="h1 h1--hc">Collections</span>
+          </div>
+        </div>
+        <div class="magazine__content">
+          <div class="magazine__wrapper">
+            <div class="magazine__image">
+              <img src="assets/media/images/magazine-1.png" alt="magazine" />
+            </div>
+            <div class="magazine__info">
+              <p class="h5 h5--lc">Magzy 10 - Classic style</p>
+              <p class="text-large text-large--regular">$10</p>
+            </div>
+          </div>
+          <div class="magazine__wrapper">
+            <div class="magazine__image">
+              <img src="assets/media/images/magazine-2.png" alt="magazine" />
+            </div>
+            <div class="magazine__info">
+              <p class="h5 h5--lc">Magzy 9 - Classic style</p>
+              <p class="text-large text-large--regular">$10</p>
+            </div>
+          </div>
+          <div class="magazine__wrapper">
+            <div class="magazine__image">
+              <img src="assets/media/images/magazine-3.png" alt="magazine" />
+            </div>
+            <div class="magazine__info">
+              <p class="h5 h5--lc">Magzy 8 - Classic style</p>
+              <p class="text-large text-large--regular">$10</p>
+            </div>
+          </div>
+        </div>
+        <div class="button-link-text">
+          <p class="button-text button-text--xl">View Marketplace</p>
+        </div>
+      </div>
+    </section>
+    <!-- End::Magazine Section -->
+  </main>
+
+  <!-- Start::Footer -->
+  <footer class="section-footer">
+    <div class="footer container-lg">
+      <div class="footer__top">
+        <div class="footer__left-top">
+          <div class="footer__title">
+            Subscribe <span>NOW</span>
+          </div>
+          <div class="footer__form">
+            <input type="text" placeholder="E-MAIL ADDRESS" class="footer__form__input text-xl text-xl--medium" />
+            <button class="footer__form__button text-large text-large--medium">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer__left-bottom">
+          <p class="h2 h2--hc">MAGZY</p>
+          <p class="text-normal text-normal--regular">Magzy has the most recent information on fashion, beauty, celebrity style, fashion week updates, reviews of popular culture, and videos.</p>
+        </div>
+        <div class="footer__right">
+          <div class="footer__image">
+            <img src="assets/media/images/footer.png" alt="footer" />
+          </div>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__menu">
+          <p class="h5 h5--lc">menu</p>
+          <div class="footer__item">
+            <p class="text-normal text-normal--regular">Fashion</p>
+            <p class="text-normal text-normal--regular">Celebrity</p>
+            <p class="text-normal text-normal--regular">Lifestyle</p>
+            <p class="text-normal text-normal--regular">Events</p>
+            <p class="text-normal text-normal--regular">Gallery</p>
+            <p class="text-normal text-normal--regular">About</p>
+            <p class="text-normal text-normal--regular">Privacy Policy</p>
+            <p class="text-normal text-normal--regular">Faq</p>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <p class="h5 h5--lc">menu</p>
+          <div class="footer__item">
+            <p class="text-normal text-normal--regular">Fashion</p>
+            <p class="text-normal text-normal--regular">Celebrity</p>
+            <p class="text-normal text-normal--regular">Lifestyle</p>
+            <p class="text-normal text-normal--regular">Events</p>
+
+          </div>
+        </div>
+        <div class="footer__menu">
+          <p class="h5 h5--lc">menu</p>
+          <div class="footer__item">
+            <p class="text-normal text-normal--regular">Fashion</p>
+            <p class="text-normal text-normal--regular">Celebrity</p>
+            <p class="text-normal text-normal--regular">Lifestyle</p>
+            <p class="text-normal text-normal--regular">Events</p>
+
+          </div>
+        </div>
+      </div>
+  </footer>
+  <!-- End::Footer -->
+
+  <!-- Start::Global Bundle Scripts (used by all pages) -->
+  <script src="assets/js/scripts.bundle.js"></script>
+  <!-- End::Global Bundle Scripts -->
+  <!-- Start::Page Scripts (used by this page) -->
+  <script src="assets/js/pages/home-v1.js"></script>
+  <!-- End::Page Scripts -->
+</body>
+
 </html>
