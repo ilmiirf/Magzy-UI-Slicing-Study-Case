@@ -26,6 +26,7 @@
       height: 690px;
       width: 100%;
       padding-bottom: 12px;
+      overflow: hidden;
 
       @include media-breakpoint-down(lg) {
         flex-direction: column;
@@ -79,11 +80,6 @@
           }
         }
       }
-    }
-    &__addition {
-      width: 96px;
-      background-color: $brand-primary;
-      display: none;
     }
   }
 }
