@@ -19,6 +19,10 @@
       }
     }
 
+    &__menu {
+      display: none;
+    }
+
     &__content {
       position: relative;
       display: flex;
@@ -54,6 +58,7 @@
     }
 
     &__info {
+      width: 100%;
       display: flex;
       background-color: $neutral-bg-dark;
       color: $neutral-text-white;

@@ -15,3 +15,5 @@ $(document).ready(function () {
 });
 
 import collapse from "./custom/collapse";
+
+import tabMenu from "./custom/tab-menu";
