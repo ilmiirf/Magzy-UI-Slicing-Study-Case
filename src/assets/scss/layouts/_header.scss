@@ -92,6 +92,7 @@
 
   &__link {
     color: $neutral-text-dark !important;
+    cursor: pointer;
 
     &:hover {
       color: $secondary !important;
@@ -107,6 +108,13 @@
     color: $primary;
     max-width: 100%;
     width: 100%;
+
+    > .btn-subscribe {
+      cursor: pointer;
+      &:hover {
+        color: $brand-primary-dark;
+      }
+    }
   }
 
   &__icon-cart {

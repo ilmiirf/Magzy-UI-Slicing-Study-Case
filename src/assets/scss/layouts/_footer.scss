@@ -97,6 +97,12 @@
       background: $brand-primary;
       color: $neutral-text-white;
       text-transform: uppercase;
+
+      cursor: pointer;
+
+      &:hover {
+        background: $brand-primary-dark;
+      }
     }
   }
 
@@ -189,6 +195,15 @@
 
     & > * {
       width: max-content;
+    }
+
+    & > a {
+      color: $neutral-text-dark;
+      cursor: pointer;
+
+      &:hover {
+        color: $brand-primary;
+      }
     }
   }
 }

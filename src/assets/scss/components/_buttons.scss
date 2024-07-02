@@ -8,6 +8,8 @@
 
   transition: all 0.5s ease-in-out;
 
+  cursor: pointer;
+
   &:hover {
     color: $primary;
     border-color: $primary;
@@ -36,6 +38,8 @@
   display: flex;
   gap: 8px;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .button-link {
@@ -45,6 +49,8 @@
   align-items: center;
   color: $neutral-text-white;
   transition: all 0.5s ease-in-out;
+
+  cursor: pointer;
 
   &:hover {
     color: $primary;
@@ -73,6 +79,8 @@
 
   transition: all 0.5s ease-in-out;
 
+  cursor: pointer;
+
   &:hover {
     color: $primary;
   }
@@ -92,6 +100,8 @@
   color: $brand-primary;
 
   transition: all 0.5s ease-in-out;
+
+  cursor: pointer;
   :hover {
     color: $brand-primary-dark;
   }
