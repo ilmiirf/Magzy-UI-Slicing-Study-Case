@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+Template Name: - 
+Author: -
+Website: -
+Contact: -
+License: -
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpack HTML Starter Template</title>
+    <link rel="shortcut icon" href="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <!-- Start::Global Styles (used by all pages) -->
+    <link
+      href="assets/css/styles.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- End::Global Styles -->
+    <!-- Start::Page Styles (used by this page) -->
+    <link
+      href="assets/css/pages/home-v1.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- End::Page Styles -->
+  </head>
+
+  <body>
+    <!-- Start::Header Section -->
+    <header class="header">
+      <div class="custom-container">
+        <div class="navigation">
+          <div class="navigation__menu">
+            <div class="btn-icon icon-hamburger"></div>
+            <div class="btn-icon icon-close"></div>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#news" class="navigation__link">News</a>
+              </li>
+              <svg
+                width="22"
+                height="25"
+                viewBox="0 0 22 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_6190_11051)">
+                  <path
+                    d="M17.4167 2L3.66669 24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+              <li class="navigation__item">
+                <a href="#events" class="navigation__link">Events</a>
+              </li>
+              <svg
+                width="22"
+                height="25"
+                viewBox="0 0 22 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_6190_11051)">
+                  <path
+                    d="M17.4167 2L3.66669 24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+              <li class="navigation__item">
+                <a href="#shop" class="navigation__link">Shop</a>
+              </li>
+              <svg
+                width="22"
+                height="25"
+                viewBox="0 0 22 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_6190_11051)">
+                  <path
+                    d="M17.4167 2L3.66669 24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+              <li class="navigation__item">
+                <a href="#gallery" class="navigation__link">Gallery</a>
+              </li>
+              <svg
+                width="22"
+                height="25"
+                viewBox="0 0 22 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_6190_11051)">
+                  <path
+                    d="M17.4167 2L3.66669 24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+              <li class="navigation__item">
+                <a href="#contact" class="navigation__link">All Pages</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navigation__logo">
+            <img src="assets/media/images/logo.png" alt="logo" />
+          </div>
+          <div class="navigation__action">
+            <a href="" class="btn-icon">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1730_10987)">
+                  <path
+                    d="M16.875 19.1077H17.875V17.1077H16.875V19.1077ZM7.79719 18.1077L7.79704 19.1077H7.79719V18.1077ZM6.32156 16.8758L7.30547 16.6971L7.30459 16.6924L6.32156 16.8758ZM3.75235 3.10771L4.73538 2.92427L4.583 2.10771L3.75235 2.10771L3.75235 3.10771ZM1.50001 2.1077L0.500005 2.10769L0.499995 4.10769L1.49999 4.1077L1.50001 2.1077ZM16.875 17.1077H7.79719V19.1077H16.875V17.1077ZM7.79733 17.1077C7.68024 17.1077 7.56687 17.0666 7.47698 16.9915L6.19526 18.5268C6.6447 18.902 7.21157 19.1076 7.79704 19.1077L7.79733 17.1077ZM7.47698 16.9915C7.38709 16.9165 7.32639 16.8123 7.30546 16.6971L5.33767 17.0546C5.44232 17.6306 5.74582 18.1516 6.19526 18.5268L7.47698 16.9915ZM7.30459 16.6924L4.73538 2.92427L2.76932 3.29115L5.33853 17.0593L7.30459 16.6924ZM3.75235 2.10771L1.50001 2.1077L1.49999 4.1077L3.75234 4.10771L3.75235 2.10771Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M7.875 21.8077C8.91053 21.8077 9.75 20.9682 9.75 19.9327C9.75 18.8972 8.91053 18.0577 7.875 18.0577C6.83947 18.0577 6 18.8972 6 19.9327C6 20.9682 6.83947 21.8077 7.875 21.8077Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.875 21.8577C18.9105 21.8577 19.75 21.0182 19.75 19.9827C19.75 18.9472 18.9105 18.1077 17.875 18.1077C16.8395 18.1077 16 18.9472 16 19.9827C16 21.0182 16.8395 21.8577 17.875 21.8577Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.86406 13.3577C5.31178 13.3577 4.86406 13.8054 4.86406 14.3577C4.86406 14.91 5.31178 15.3577 5.86406 15.3577V13.3577ZM17.6344 14.3577V15.3577H17.6345L17.6344 14.3577ZM19.11 13.1258L18.1261 12.9469L18.1261 12.9471L19.11 13.1258ZM20.25 6.8577L21.2339 7.03663L21.4483 5.8577H20.25V6.8577ZM4.5 5.8577C3.94772 5.8577 3.5 6.30541 3.5 6.8577C3.5 7.40998 3.94772 7.8577 4.5 7.8577V5.8577ZM5.86406 15.3577H17.6344V13.3577H5.86406V15.3577ZM17.6345 15.3577C18.22 15.3576 18.7869 15.152 19.2363 14.7768L17.9546 13.2415C17.8647 13.3166 17.7513 13.3577 17.6342 13.3577L17.6345 15.3577ZM19.2363 14.7768C19.6857 14.4016 19.9892 13.8806 20.0939 13.3046L18.1261 12.9471C18.1052 13.0623 18.0445 13.1665 17.9546 13.2415L19.2363 14.7768ZM20.0939 13.3048L21.2339 7.03663L19.2661 6.67876L18.1261 12.9469L20.0939 13.3048ZM20.25 5.8577H4.5V7.8577H20.25V5.8577Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1730_10987">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.857697)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <svg
+              width="22"
+              height="25"
+              viewBox="0 0 22 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_6190_11051)">
+                <path
+                  d="M17.4167 2L3.66669 24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+            <div class="btn-subscribe">
+              <a href="#" class="button-lg">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End::Header Section -->
+
+    <!-- Start::main Section -->
+    <main class="home-page">
+      <!-- Start::Hero Section -->
+      <section class="section-hero">
+        <div class="hero custom-container">
+          <div class="hero__title">
+            <h1 class="display-1 font-hc">M</h1>
+            <h1 class="display-1 font-hc">a</h1>
+            <h1 class="display-1 font-hc">g</h1>
+            <h1 class="display-1 font-hc">z</h1>
+            <div class="hero__title-y">
+              <h1 class="display-1 font-hc">y</h1>
+              <h4 class="display-5">Magazine</h4>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="assets/media/images/hero.png" alt="hero" />
+        </div>
+      </section>
+      <!-- End::Hero Section -->
+
+      <!-- Start::Features Section -->
+      <section class="section-features">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="false"
+        >
+          <div class="feature custom-container">
+            <div class="carousel-inner">
+              <!-- Start::Slide 1 -->
+              <div class="carousel-item active">
+                <div class="feature-slide">
+                  <div class="feature-slide__image-box">
+                    <div class="feature-slide__image">
+                      <img
+                        src="assets/media/images/features-3.png"
+                        alt="feature"
+                      />
+                    </div>
+                    <div class="writer">
+                      <svg
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24 12.2502C15.9995 14.46 14.2097 16.2498 12 24.2502C9.79028 16.2498 8.00046 14.46 0 12.2502C8.00046 10.0405 9.79028 8.2507 12 0.250244C14.2097 8.2507 15.9995 10.0405 24 12.2502Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <p class="body-normal font-light">
+                        Written by
+                        <span class="font-semibold">Jashmeen Alexandra</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-slide__content blog">
+                    <div class="blog__content">
+                      <div class="blog__meta">
+                        <div class="tag">
+                          <p class="body-normal font-semibold">fashion</p>
+                        </div>
+                        <p class="body-normal font-regular">Aug 8, 2022</p>
+                      </div>
+                      <div class="blog__title">
+                        <a class="h2">
+                          The Manhattan STREET Show included a lot of eccentric
+                          fashion
+                        </a>
+                      </div>
+                    </div>
+                    <div class="feature-slide__description">
+                      <p class="body-lg font-regular">
+                        Despite the cold weather, shoppers lined up outside the
+                        Manhattan Vintage Show last Friday. Co-owner Amy Abrams
+                        said they had vintage items for all eras and price
+                        points, including clothing and accessories. The shoppers
+                        were there for the triennial event, hoping to find 1950s
+                        outfits or a Versace leather jacket
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End::Slide 1 -->
+
+              <!-- Start::Slide 2 -->
+              <div class="carousel-item">
+                <div class="feature-slide">
+                  <div class="feature-slide__image-box">
+                    <div class="feature-slide__image">
+                      <img
+                        src="assets/media/images/features-1.png"
+                        alt="feature"
+                      />
+                    </div>
+                    <div class="writer">
+                      <svg
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24 12.2502C15.9995 14.46 14.2097 16.2498 12 24.2502C9.79028 16.2498 8.00046 14.46 0 12.2502C8.00046 10.0405 9.79028 8.2507 12 0.250244C14.2097 8.2507 15.9995 10.0405 24 12.2502Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <p class="body-normal font-light">
+                        Written by
+                        <span class="font-semibold">Jashmeen Alexandra</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-slide__content blog">
+                    <div class="blog__content">
+                      <div class="blog__meta">
+                        <div class="tag">
+                          <p class="body-normal font-semibold">fashion</p>
+                        </div>
+                        <p class="body-normal font-regular">Aug 8, 2022</p>
+                      </div>
+                      <div class="blog__title">
+                        <a class="h2">
+                          Elevate Your Wardrobe: Tips and Tricks for a
+                          Fashionable Lifestyle
+                        </a>
+                      </div>
+                    </div>
+                    <div class="feature-slide__description">
+                      <p class="body-lg font-regular">
+                        Despite the cold weather, shoppers lined up outside the
+                        Manhattan Vintage Show last Friday. Co-owner Amy Abrams
+                        said they had vintage items for all eras and price
+                        points, including clothing and accessories. The shoppers
+                        were there for the triennial event, hoping to find 1950s
+                        outfits or a Versace leather jacket
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End::Slide 2 -->
+            </div>
+            <div class="feature__slider-button">
+              <div class="button-slider-box">
+                <button
+                  class="button-icon button-icon--large"
+                  id="prev-option"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.1422 3.53553L15.91 5.3033L4.78188 16.4314L34.1091 16.4314L34.1091 18.9239L4.78187 18.9239L15.91 30.052L14.1422 31.8198L6.50065e-05 17.6777L14.1422 3.53553Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="button-icon button-icon--large"
+                  id="next-option"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.5355 3.53553L19.7678 5.3033L30.8959 16.4314L1.5686 16.4314L1.56861 18.9239L30.8959 18.9239L19.7678 30.052L21.5355 31.8198L35.6777 17.6777L21.5355 3.53553Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature__image-side">
+          <img src="assets/media/images/features-addition.png" alt="feature" />
+        </div>
+      </section>
+      <!-- End::Features Section -->
+
+      <!-- Start::Stories Section -->
+      <section class="section-stories">
+        <div class="story custom-container">
+          <div class="heading-title">
+            <h2 class="h1">Today's <span class="font-hc">Stories</span></h2>
+            <a class="button-link">
+              <h4 class="h4">view all</h4>
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 7.75024V10.2502H28.2375L7.5 30.9877L9.2625 32.7502L30 12.0127V27.7502H32.5V7.75024L12.5 7.75024Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="story__content">
+            <div class="story__item-1 blog blog--block">
+              <div class="blog__image">
+                <img src="assets/media/images/story-1.png" alt="story" />
+              </div>
+              <div class="blog__content-warapper">
+                <div class="blog__content">
+                  <div class="blog__meta">
+                    <div class="tag">
+                      <p class="body-normal font-semibold">fashion</p>
+                    </div>
+                    <p class="body-normal font-regular">Aug 8, 2022</p>
+                  </div>
+                  <div class="blog__title">
+                    <a class="h3">
+                      What Street Fashion Was Like a Decade Ago a Decade Ago
+                      Like
+                    </a>
+                  </div>
+                </div>
+                <div class="writer">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 12.2502C15.9995 14.46 14.2097 16.2498 12 24.2502C9.79028 16.2498 8.00046 14.46 0 12.2502C8.00046 10.0405 9.79028 8.2507 12 0.250244C14.2097 8.2507 15.9995 10.0405 24 12.2502Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p class="body-normal font-light">
+                    Written by
+                    <span class="font-semibold">Jashmeen Alexandra</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="story__item-2 blog blog--inline">
+              <div class="blog__image">
+                <img src="assets/media/images/story-2.png" alt="story" />
+              </div>
+              <div class="blog__content-warapper">
+                <div class="blog__content">
+                  <div class="blog__meta">
+                    <div class="tag">
+                      <p class="body-normal font-semibold">fashion</p>
+                    </div>
+                    <p class="body-normal font-regular">Aug 10, 2022</p>
+                  </div>
+                  <div class="blog__title">
+                    <a class="h3"> Men, promise, skirts aren't that scary! </a>
+                  </div>
+                </div>
+                <div class="writer">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 12.2502C15.9995 14.46 14.2097 16.2498 12 24.2502C9.79028 16.2498 8.00046 14.46 0 12.2502C8.00046 10.0405 9.79028 8.2507 12 0.250244C14.2097 8.2507 15.9995 10.0405 24 12.2502Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p class="body-normal font-light">
+                    Written by
+                    <span class="font-semibold">Jashmeen Alexandra</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="story__item-3 blog blog--inline">
+              <div class="blog__image">
+                <img src="assets/media/images/story-3.png" alt="story" />
+              </div>
+              <div class="blog__content-warapper">
+                <div class="blog__content">
+                  <div class="blog__meta">
+                    <div class="tag">
+                      <p class="body-normal font-semibold">fashion</p>
+                    </div>
+                    <p class="body-normal font-regular">Aug 11, 2022</p>
+                  </div>
+                  <div class="blog__title">
+                    <a class="h3">
+                      The Best Copenhagen Street Style Photos From the Fall 2023
+                      Season
+                    </a>
+                  </div>
+                </div>
+                <div class="writer">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 12.2502C15.9995 14.46 14.2097 16.2498 12 24.2502C9.79028 16.2498 8.00046 14.46 0 12.2502C8.00046 10.0405 9.79028 8.2507 12 0.250244C14.2097 8.2507 15.9995 10.0405 24 12.2502Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p class="body-normal font-light">
+                    Written by
+                    <span class="font-semibold">Jashmeen Alexandra</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End::Stories Section -->
+
+      <!-- Start::Even List Section -->
+      <section class="section-event-list">
+        <div class="event-list">
+          <div class="heading-title heading-title--center custom-container">
+            <h2 class="h1">Event <span class="font-hc">List</span></h2>
+          </div>
+          <div class="custom-mobile-container">
+            <div class="event-list__dates">
+              <button
+                class="button-tab button-tab--active h4-event-date"
+                data-rel="tab-1"
+              >
+                20.03.2023
+              </button>
+              <button class="button-tab h4-event-date" data-rel="tab-2">
+                21.03.2023
+              </button>
+              <button class="button-tab h4-event-date" data-rel="tab-3">
+                22.03.2023
+              </button>
+              <button class="button-tab h4-event-date" data-rel="tab-4">
+                23.03.2023
+              </button>
+              <button class="button-tab h4-event-date" data-rel="tab-4">
+                24.03.2023
+              </button>
+              <div class="button-view-all">
+                <a class="button-link">
+                  <h4 class="h4-event-date">view all</h4>
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 7.75024V10.2502H28.2375L7.5 30.9877L9.2625 32.7502L30 12.0127V27.7502H32.5V7.75024L12.5 7.75024Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="event-list__menu custom-left-container"
+            id="tab-1"
+            style="display: block"
+          >
+            <div class="event-list__content">
+              <div class="event-list__image">
+                <img src="assets/media/images/event-list1.png" alt="event" />
+              </div>
+              <div class="event-list__info">
+                <div class="event-list__card">
+                  <div>
+                    <h5 class="h4-event-date">04.05.2023</h5>
+                    <h2 class="display-3">Urban Runaway</h2>
+                    <h5 class="body-lg font-regular">
+                      A fashionable street event
+                    </h5>
+                  </div>
+                  <a class="button-link-text button-xl">Get Ticket Now</a>
+                </div>
+              </div>
+              <div class="event-list__addition">
+                <div class="infinite-scroll">
+                  <ul>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 1</span>
+                      <svg
+                        width="26"
+                        height="24"
+                        viewBox="0 0 26 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.7174 0.694562C13.7432 1.5121 14.8978 1.65839 15.1259 0.87241C15.3855 -0.0197065 16.7194 0.323083 16.5171 1.22954C16.3378 2.02843 17.4207 2.45728 17.8366 1.75162C18.3085 0.95273 19.5176 1.61679 19.0959 2.44293C18.7245 3.17154 19.6653 3.85568 20.2448 3.27767C20.9017 2.62077 21.9057 3.56454 21.2918 4.26159C20.7511 4.87546 21.4926 5.77188 22.1968 5.35594C22.9957 4.88263 23.7344 6.04726 22.967 6.56933C22.2901 7.02973 22.7849 8.08248 23.5709 7.853C24.463 7.59339 24.889 8.90432 24.014 9.21843C23.2438 9.49524 23.4619 10.6384 24.2794 10.6125C25.2074 10.5838 25.2934 11.9593 24.3698 12.0468C23.5551 12.1243 23.4819 13.2846 24.2808 13.4639C25.1873 13.6661 24.9291 15.0201 24.0112 14.8752C23.2023 14.7476 22.8437 15.8534 23.5723 16.2248C24.3999 16.6465 23.8133 17.8929 22.9613 17.5243C22.2097 17.1987 21.5873 18.1812 22.2011 18.7233C22.8982 19.3372 22.019 20.4 21.2861 19.8306C20.6392 19.3286 19.7916 20.1261 20.252 20.8016C20.774 21.5689 19.6596 22.3793 19.0902 21.6464C18.5882 20.9995 17.5684 21.5603 17.8467 22.3305C18.1608 23.204 16.88 23.7117 16.5114 22.8598C16.1858 22.1082 15.0599 22.398 15.1359 23.2126C15.2234 24.1377 13.8565 24.3098 13.7102 23.3933C13.5826 22.5844 12.4194 22.5844 12.2903 23.3933C12.1455 24.3098 10.7772 24.1377 10.8647 23.214C10.9421 22.3994 9.81477 22.1097 9.48919 22.8612C9.12059 23.7132 7.83834 23.2054 8.15388 22.332C8.43069 21.5618 7.41092 21.001 6.91036 21.6478C6.34095 22.3822 5.22653 21.5718 5.7486 20.803C6.209 20.1261 5.35992 19.33 4.7145 19.832C3.98159 20.4014 3.10238 19.3386 3.79943 18.7248C4.4133 18.1841 3.78939 17.2016 3.03926 17.5257C2.1873 17.8943 1.60069 16.648 2.42826 16.2263C3.15687 15.8548 2.79831 14.7476 1.98938 14.8766C1.07288 15.0215 0.813279 13.6675 1.71974 13.4653C2.51863 13.2875 2.44548 12.1257 1.63081 12.0482C0.70571 11.9608 0.793201 10.5853 1.72117 10.614C2.53871 10.6398 2.75671 9.49668 1.98651 9.21986C1.11304 8.90576 1.53901 7.59483 2.4297 7.85443C3.21568 8.08248 3.71051 7.02973 3.03354 6.57077C2.26477 6.04869 3.00342 4.88549 3.80374 5.35736C4.50797 5.77473 5.24948 4.8769 4.70876 4.26303C4.09489 3.56597 5.09888 2.62364 5.75578 3.2791C6.33379 3.85855 7.27611 3.17441 6.90463 2.44437C6.48296 1.61679 7.6906 0.952732 8.16391 1.75305C8.57985 2.45728 9.66273 2.02987 9.48345 1.23098C9.28122 0.324519 10.6151 -0.0182708 10.8747 0.873846C11.1027 1.65983 12.2573 1.51351 12.2832 0.69598C12.3118 -0.231993 13.6902 -0.231993 13.7189 0.69598L13.7174 0.694562Z"
+                          fill="#E4E3E2"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 2</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 3</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 4</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 5</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 6</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 7</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 1</span>
+                      <svg
+                        width="26"
+                        height="24"
+                        viewBox="0 0 26 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.7174 0.694562C13.7432 1.5121 14.8978 1.65839 15.1259 0.87241C15.3855 -0.0197065 16.7194 0.323083 16.5171 1.22954C16.3378 2.02843 17.4207 2.45728 17.8366 1.75162C18.3085 0.95273 19.5176 1.61679 19.0959 2.44293C18.7245 3.17154 19.6653 3.85568 20.2448 3.27767C20.9017 2.62077 21.9057 3.56454 21.2918 4.26159C20.7511 4.87546 21.4926 5.77188 22.1968 5.35594C22.9957 4.88263 23.7344 6.04726 22.967 6.56933C22.2901 7.02973 22.7849 8.08248 23.5709 7.853C24.463 7.59339 24.889 8.90432 24.014 9.21843C23.2438 9.49524 23.4619 10.6384 24.2794 10.6125C25.2074 10.5838 25.2934 11.9593 24.3698 12.0468C23.5551 12.1243 23.4819 13.2846 24.2808 13.4639C25.1873 13.6661 24.9291 15.0201 24.0112 14.8752C23.2023 14.7476 22.8437 15.8534 23.5723 16.2248C24.3999 16.6465 23.8133 17.8929 22.9613 17.5243C22.2097 17.1987 21.5873 18.1812 22.2011 18.7233C22.8982 19.3372 22.019 20.4 21.2861 19.8306C20.6392 19.3286 19.7916 20.1261 20.252 20.8016C20.774 21.5689 19.6596 22.3793 19.0902 21.6464C18.5882 20.9995 17.5684 21.5603 17.8467 22.3305C18.1608 23.204 16.88 23.7117 16.5114 22.8598C16.1858 22.1082 15.0599 22.398 15.1359 23.2126C15.2234 24.1377 13.8565 24.3098 13.7102 23.3933C13.5826 22.5844 12.4194 22.5844 12.2903 23.3933C12.1455 24.3098 10.7772 24.1377 10.8647 23.214C10.9421 22.3994 9.81477 22.1097 9.48919 22.8612C9.12059 23.7132 7.83834 23.2054 8.15388 22.332C8.43069 21.5618 7.41092 21.001 6.91036 21.6478C6.34095 22.3822 5.22653 21.5718 5.7486 20.803C6.209 20.1261 5.35992 19.33 4.7145 19.832C3.98159 20.4014 3.10238 19.3386 3.79943 18.7248C4.4133 18.1841 3.78939 17.2016 3.03926 17.5257C2.1873 17.8943 1.60069 16.648 2.42826 16.2263C3.15687 15.8548 2.79831 14.7476 1.98938 14.8766C1.07288 15.0215 0.813279 13.6675 1.71974 13.4653C2.51863 13.2875 2.44548 12.1257 1.63081 12.0482C0.70571 11.9608 0.793201 10.5853 1.72117 10.614C2.53871 10.6398 2.75671 9.49668 1.98651 9.21986C1.11304 8.90576 1.53901 7.59483 2.4297 7.85443C3.21568 8.08248 3.71051 7.02973 3.03354 6.57077C2.26477 6.04869 3.00342 4.88549 3.80374 5.35736C4.50797 5.77473 5.24948 4.8769 4.70876 4.26303C4.09489 3.56597 5.09888 2.62364 5.75578 3.2791C6.33379 3.85855 7.27611 3.17441 6.90463 2.44437C6.48296 1.61679 7.6906 0.952732 8.16391 1.75305C8.57985 2.45728 9.66273 2.02987 9.48345 1.23098C9.28122 0.324519 10.6151 -0.0182708 10.8747 0.873846C11.1027 1.65983 12.2573 1.51351 12.2832 0.69598C12.3118 -0.231993 13.6902 -0.231993 13.7189 0.69598L13.7174 0.694562Z"
+                          fill="#E4E3E2"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 2</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 3</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 4</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 5</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 6</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <span class="thunder-lc-light-48">FREE ENTRY 7</span>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7379 0.694562C12.7637 1.5121 13.9183 1.65839 14.1464 0.87241C14.406 -0.0197065 15.7399 0.323083 15.5376 1.22954C15.3583 2.02843 16.4412 2.45728 16.8572 1.75162C17.329 0.95273 18.5381 1.61679 18.1164 2.44293C17.745 3.17154 18.6859 3.85568 19.2653 3.27767C19.9222 2.62077 20.9262 3.56454 20.3123 4.26159C19.7716 4.87546 20.5131 5.77188 21.2173 5.35594C22.0162 4.88263 22.7549 6.04726 21.9875 6.56933C21.3106 7.02973 21.8054 8.08248 22.5914 7.853C23.4835 7.59339 23.9095 8.90432 23.0346 9.21843C22.2644 9.49524 22.4824 10.6384 23.2999 10.6125C24.2279 10.5838 24.3139 11.9593 23.3903 12.0468C22.5756 12.1243 22.5025 13.2846 23.3013 13.4639C24.2078 13.6661 23.9496 15.0201 23.0317 14.8752C22.2228 14.7476 21.8642 15.8534 22.5928 16.2248C23.4204 16.6465 22.8338 17.8929 21.9818 17.5243C21.2302 17.1987 20.6078 18.1812 21.2217 18.7233C21.9187 19.3372 21.0395 20.4 20.3066 19.8306C19.6597 19.3286 18.8121 20.1261 19.2725 20.8016C19.7945 21.5689 18.6801 22.3793 18.1107 21.6464C17.6087 20.9995 16.5889 21.5603 16.8672 22.3305C17.1813 23.204 15.9005 23.7117 15.5319 22.8598C15.2063 22.1082 14.0804 22.398 14.1564 23.2126C14.2439 24.1377 12.877 24.3098 12.7308 23.3933C12.6031 22.5844 11.4399 22.5844 11.3108 23.3933C11.166 24.3098 9.79767 24.1377 9.88516 23.214C9.96261 22.3994 8.83528 22.1097 8.5097 22.8612C8.14109 23.7132 6.85885 23.2054 7.17439 22.332C7.4512 21.5618 6.43143 21.001 5.93087 21.6478C5.36146 22.3822 4.24704 21.5718 4.76911 20.803C5.22951 20.1261 4.38043 19.33 3.73501 19.832C3.00209 20.4014 2.12288 19.3386 2.81994 18.7248C3.43381 18.1841 2.80989 17.2016 2.05977 17.5257C1.20781 17.8943 0.621194 16.648 1.44877 16.2263C2.17738 15.8548 1.81882 14.7476 1.00989 14.8766C0.0933909 15.0215 -0.166213 13.6675 0.740247 13.4653C1.53914 13.2875 1.46599 12.1257 0.651322 12.0482C-0.273783 11.9608 -0.186291 10.5853 0.741682 10.614C1.55922 10.6398 1.77722 9.49668 1.00702 9.21986C0.133548 8.90576 0.559521 7.59483 1.4502 7.85443C2.23618 8.08248 2.73102 7.02973 2.05404 6.57077C1.28527 6.04869 2.02392 4.88549 2.82425 5.35736C3.52847 5.77474 4.26998 4.8769 3.72926 4.26303C3.1154 3.56597 4.11939 2.62364 4.77629 3.2791C5.3543 3.85855 6.29662 3.17441 5.92514 2.44437C5.50347 1.61679 6.71111 0.952732 7.18442 1.75305C7.60036 2.45728 8.68324 2.02987 8.50396 1.23098C8.30173 0.324519 9.63559 -0.0182708 9.8952 0.873846C10.1232 1.65983 11.2778 1.51351 11.3037 0.69598C11.3323 -0.231993 12.7107 -0.231993 12.7394 0.69598L12.7379 0.694562Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End::Even List Section -->
+
+      <!-- Start::Photoshot Section -->
+      <section class="section-photoshoot">
+        <div class="photoshoot custom-container">
+          <div class="heading-title">
+            <h2 class="h1">Fashion Photos<span class="font-hc">oo</span>t</h2>
+            <a class="button-link">
+              <h4 class="h4">view all</h4>
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 7.75024V10.2502H28.2375L7.5 30.9877L9.2625 32.7502L30 12.0127V27.7502H32.5V7.75024L12.5 7.75024Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="photoshoot__content">
+            <div class="photoshoot__wrapper">
+              <div class="photoshoot__information">
+                <a class="h4">
+                  Photo of Fashion Model Nicole Black at Del Mar Villa in Dundee
+                  Oregon
+                </a>
+                <div class="photoshoot__description">
+                  <div class="photoshoot__name">
+                    <p class="body-normal font-light text-left">
+                      Creative Direction
+                    </p>
+                    <div class="text-right">
+                      <p class="body-normal font-medium">Marne Swartch</p>
+                    </div>
+                  </div>
+                  <div class="photoshoot__name">
+                    <p class="body-normal font-light text-left">Photography</p>
+                    <div class="text-right">
+                      <p class="body-normal font-medium">Lance Reis</p>
+                    </div>
+                  </div>
+                  <div class="photoshoot__name">
+                    <p class="body-normal font-light text-left">
+                      Fashion Direction
+                    </p>
+                    <div class="text-right">
+                      <p class="body-normal font-medium">Lee Jae Min</p>
+                    </div>
+                  </div>
+                  <div class="photoshoot__name">
+                    <p class="body-normal font-light text-left">
+                      Hair & Makeup
+                    </p>
+                    <div class="text-right">
+                      <p class="body-normal font-medium">Charlotter Marie</p>
+                    </div>
+                  </div>
+                  <div class="photoshoot__name">
+                    <p class="body-normal font-light text-left">Model</p>
+                    <div class="text-right">
+                      <p class="body-normal font-medium">Sarah Nicole</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-link-text">
+                  <p class="button-normal">View more</p>
+                </div>
+              </div>
+              <div class="photoshoot__images">
+                <div class="photoshoot__image">
+                  <img
+                    src="assets/media/images/photoshoot-1-1.png"
+                    alt="photoshoot"
+                  />
+                </div>
+                <div class="photoshoot__image">
+                  <img
+                    src="assets/media/images/photoshoot-1-2.png"
+                    alt="photoshoot"
+                  />
+                </div>
+                <div class="photoshoot__image">
+                  <img
+                    src="assets/media/images/photoshoot-1-3.png"
+                    alt="photoshoot"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End::Photoshot Section -->
+
+      <!-- Start::Magazine Section -->
+      <section class="section-magazine">
+        <div class="magazine custom-container">
+          <div class="heading-title heading-title--center custom-container">
+            <h2 class="h1">
+              Magazine <span class="font-hc">Collections</span>
+            </h2>
+          </div>
+
+          <div class="magazine__scroll">
+            <div class="magazine__content">
+              <div class="magazine__wrapper">
+                <div class="magazine__image">
+                  <img
+                    src="assets/media/images/magazine-1.png"
+                    alt="magazine"
+                  />
+                </div>
+                <div class="magazine__info">
+                  <a class="h5">Magzy 10 - Classic style</a>
+                  <p class="body-normal font-regular">$10</p>
+                </div>
+              </div>
+              <div class="magazine__wrapper">
+                <div class="magazine__image">
+                  <img
+                    src="assets/media/images/magazine-2.png"
+                    alt="magazine"
+                  />
+                </div>
+                <div class="magazine__info">
+                  <a class="h5">Magzy 9 - Classic style</a>
+                  <p class="body-normal font-regular">$10</p>
+                </div>
+              </div>
+              <div class="magazine__wrapper">
+                <div class="magazine__image">
+                  <img
+                    src="assets/media/images/magazine-3.png"
+                    alt="magazine"
+                  />
+                </div>
+                <div class="magazine__info">
+                  <a class="h5">Magzy 8 - Classic style</a>
+                  <p class="body-normal font-regular">$10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-link-text">
+            <a class="button-xl">View Marketplace</a>
+          </div>
+        </div>
+      </section>
+      <!-- End::Magazine Section -->
+    </main>
+    <!-- End::Features Section -->
+
+    <!-- Start::Footer -->
+    <footer class="section-footer">
+      <div class="footer custom-no-container">
+        <div class="footer__top">
+          <div class="footer__display">
+            <h2 class="footer__title">
+              Subscribe <span>NOW</span>
+            </h2>
+            <div class="footer-form">
+              <input type="text" placeholder="E-MAIL ADDRESS" class="footer-form__input body-xl font-medium" />
+              <button class="footer-form__button body-lg font-medium">Subscribe</button>
+            </div>
+          </div>
+          <div class="footer__description">
+            <h3 class="h2 font-hc">MAGZY</h3>
+            <p class="body-normal font-regular">Magzy has the most recent information on fashion, beauty, celebrity style, fashion week updates, reviews of popular culture, and videos.</p>
+          </div>
+          <div class="footer__right-side">
+            <div class="footer__image">
+              <img src="assets/media/images/footer-img.png" alt="footer" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav custom-container">
+          <div class="footer-nav__menu">
+            <h5 class="h5">menu</h5>
+            <div class="footer-nav__item">
+              <a class="body-normal font-regular">Fashion</a>
+              <a class="body-normal font-regular">Celebrity</a>
+              <a class="body-normal font-regular">Lifestyle</a>
+              <a class="body-normal font-regular">Events</a>
+              <a class="body-normal font-regular">Gallery</a>
+              <a class="body-normal font-regular">About</a>
+              <a class="body-normal font-regular">Privacy Policy</a>
+              <a class="body-normal font-regular">Faq</a>
+            </div>
+          </div>
+          <div class="footer-nav__menu">
+            <h5 class="h5">contact</h5>
+            <div class="footer-nav__item">
+              <p class="body-normal font-regular">Magzy</p>
+              <p class="body-normal font-regular">Unit 3, 42-90 - Scrutton Street</p>
+              <p class="body-normal font-regular">London EC244 RQ, UK</p>
+              <p class="body-normal font-regular">(239) 555-0108</p>
+              <a class="body-normal font-regular">MAGZY@MAGAZINE.UK</a>
+  
+            </div>
+          </div>
+          <div class="footer-nav__menu">
+            <h5 class="h5">follow</h5>
+            <div class="footer-nav__item">
+              <a class="body-normal font-regular">Instagram</a>
+              <a class="body-normal font-regular">Facebook</a>
+              <a class="body-normal font-regular">Twitter</a>
+              <a class="body-normal font-regular">Youtube</a>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- End::Footer -->
+
+    <footer>
+      
+    </footer>
+
+    <!-- Start::Global Bundle Scripts (used by all pages) -->
+    <script src="assets/js/scripts.bundle.js"></script>
+    <!-- End::Global Bundle Scripts -->
+    <!-- Start::Page Scripts (used by this page) -->
+    <script src="assets/js/pages/home-v1.js"></script>
+    <!-- End::Page Scripts -->
+  </body>
+</html>
