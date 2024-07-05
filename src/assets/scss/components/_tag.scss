@@ -1,0 +1,14 @@
+.tag {
+  height: 34px;
+  width: fit-content;
+  padding-inline: 16px;
+  display: flex;
+  align-items: center;
+
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid;
+  border-color: inherit;
+}

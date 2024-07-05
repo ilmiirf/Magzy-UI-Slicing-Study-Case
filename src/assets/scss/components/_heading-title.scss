@@ -1,0 +1,30 @@
+.heading-title {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  &--center {
+    justify-content: center;
+    & > .h1 {
+      text-align: center;
+    }
+  }
+
+  & > .h2 {
+    min-width: min-content;
+    max-width: max-content;
+  }
+
+  & > .button-link {
+    margin-bottom: 20px;
+    width: fit-content;
+  }
+
+  @include media-breakpoint-down(md) {
+    align-items: start;
+    & > .button-link > .h4 {
+      display: none;
+    }
+  }
+}

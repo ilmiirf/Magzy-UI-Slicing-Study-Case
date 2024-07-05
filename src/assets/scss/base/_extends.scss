@@ -1,0 +1,32 @@
+%heading {
+  margin-top: 0; // 1
+  margin-bottom: $headings-margin-bottom;
+  font-family: $font-family-thunder;
+  font-weight: $headings-font-weight;
+  color: $headings-color;
+}
+
+%display {
+  margin-top: 0; // 1
+  margin-bottom: 0;
+  font-family: $font-family-thunder;
+  font-weight: $font-weight-normal;
+  color: $headings-color;
+}
+
+%body-text {
+  margin-top: 0; // 1
+  margin-bottom: 0;
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  color: inherit;
+}
+
+%button-text {
+  margin-top: 0; // 1
+  margin-bottom: 0;
+  font-family: $font-family-thunder-bold-lc;
+  font-weight: $font-weight-bolder;
+  color: inherit;
+  line-height: 1.2;
+}

@@ -1,0 +1,30 @@
+.custom-container {
+  @include custom-container(
+    $container-padding-x,
+    $container-padding-x,
+    $container-mobile-padding-x,
+    $container-max-width
+  );
+}
+
+.custom-left-container {
+  @include custom-container(
+    $container-padding-x,
+    0,
+    $container-mobile-padding-x,
+    $container-max-width
+  );
+}
+
+.custom-mobile-container {
+  @include custom-container(
+    0,
+    0,
+    $container-mobile-padding-x,
+    $container-max-width
+  );
+}
+
+.custom-no-container {
+  @include custom-container(0, 0, 0, $container-max-width);
+}
