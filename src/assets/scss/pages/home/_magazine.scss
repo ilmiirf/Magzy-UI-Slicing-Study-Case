@@ -35,6 +35,7 @@
   }
 
   &__wrapper {
+    width: 30%;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -42,7 +43,7 @@
   }
 
   &__image {
-    width: 432px;
+    width: 426px;
     height: 536px;
 
     @include media-breakpoint-down(md) {

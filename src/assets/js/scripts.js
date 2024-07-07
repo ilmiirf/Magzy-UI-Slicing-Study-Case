@@ -9,4 +9,28 @@ import * as bootstrap from "bootstrap";
 
 // Import jQuery
 import * as $ from "jquery";
-import tab from "./custom/tab-menu";
+
+// Import icon
+import "./icons/icon-arrow-left";
+import "./icons/icon-arrow-right";
+import "./icons/icon-bullet";
+import "./icons/icon-cart";
+import "./icons/icon-close";
+import "./icons/icon-down";
+import "./icons/icon-left";
+import "./icons/icon-menu";
+import "./icons/icon-right-top";
+import "./icons/icon-right";
+import "./icons/icon-slash";
+import "./icons/icon-star";
+import "./icons/icon-up";
+
+// Import components
+import "./components/photoshoot-images";
+import "./components/photoshoot-information";
+import "./components/infinite-scroll";
+
+// import custom js
+import "./custom/tab-menu";
+import "./custom/photoshoot-responsive";
+import "./custom/navigation";
