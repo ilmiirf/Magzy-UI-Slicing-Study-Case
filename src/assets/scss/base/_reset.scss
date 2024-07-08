@@ -28,6 +28,10 @@ img {
   vertical-align: 0;
 }
 
+figure {
+  margin: 0 0 0 0 !important;
+}
+
 .h1 {
   @extend %heading;
   @include heading-size(

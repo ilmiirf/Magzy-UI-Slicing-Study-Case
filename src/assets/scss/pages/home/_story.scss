@@ -28,10 +28,11 @@
   &__content {
     display: grid;
     grid-template-columns: 57% 1fr;
-    gap: 56px;
+    gap: 36px;
 
     @include media-breakpoint-down(lg) {
       grid-template-columns: 1fr;
+      gap: 48px;
     }
   }
 
