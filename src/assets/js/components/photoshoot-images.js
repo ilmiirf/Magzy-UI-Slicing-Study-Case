@@ -15,15 +15,15 @@ class PhotoshootImages extends HTMLElement {
 
     this.outerHTML = `
       <div class="photoshoot__images" id="photoshootImgList${id}">
-        <div class="photoshoot__image">
+        <figure class="photoshoot__image">
           <img src="${image1}" alt="photoshoot" />
-        </div>
-        <div class="photoshoot__image">
+        </figure>
+        <figure class="photoshoot__image">
           <img src="${image2}" alt="photoshoot" />
-        </div>
-        <div class="photoshoot__image">
+        </figure>
+        <figure class="photoshoot__image">
           <img src="${image3}" alt="photoshoot" />
-        </div>
+        </figure>
       </div>
       `;
   }

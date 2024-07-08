@@ -18,48 +18,47 @@ class PhotoshootInformation extends HTMLElement {
     const href = this.getAttribute("data-href");
 
     this.outerHTML = `
-        <div class="photoshoot__information" id="photoshootInformation${id}">
+      <div class="photoshoot__information" id="photoshootInformation${id}">
         <a class="h5 h5--not-responsive" href="#" id="photoshootTitle${id}">
           ${title}
         </a>
         <div class="photoshoot__description">
-          <div class="photoshoot__name">
-            <div class="text-left">
-              <p class="body-normal font-light">
-              Creative Direction
-            </p>
-            </div>
+          <article class="photoshoot__name">
+            <article class="text-left">
+              <p class="body-normal font-light">Creative Direction</p>
+            </article>
             <p class="body-normal font-medium">${creativeDirection}</p>
-          </div>
-          <div class="photoshoot__name">
-            <div class="text-left">
+          </article>
+          <article class="photoshoot__name">
+            <article class="text-left">
               <p class="body-normal font-light">Photography</p>
-            </div>
+            </article>
             <p class="body-normal font-medium">${photography}</p>
-          </div>
-          <div class="photoshoot__name">
-            <div class="text-left">
-              <p class="body-normal font-light "> Fashion Direction </p>
-            </div>
+          </article>
+          <article class="photoshoot__name">
+            <article class="text-left">
+              <p class="body-normal font-light">Fashion Direction</p>
+            </article>
             <p class="body-normal font-medium">${fashionDirection}</p>
-          </div>
-          <div class="photoshoot__name">
-            <div class="text-left"><p class="body-normal font-light">
-              Hair & Makeup</p>
-          </div>
+          </article>
+          <article class="photoshoot__name">
+            <article class="text-left">
+              <p class="body-normal font-light">Hair & Makeup</p>
+            </article>
             <p class="body-normal font-medium">${hairAndMakeup}</p>
-          </div>
-          <div class="photoshoot__name">
-            <div class="text-left">
+          </article>
+          <article class="photoshoot__name">
+            <article class="text-left">
               <p class="body-normal font-light">Model</p>
-            </div>
+            </article>
             <p class="body-normal font-medium">${fashionModel}</p>
-          </div>
+          </article>
         </div>
         <div class="button-link-text">
           <a class="button-normal" href="${href}">View more</a>
         </div>
       </div>
+
       `;
   }
 }

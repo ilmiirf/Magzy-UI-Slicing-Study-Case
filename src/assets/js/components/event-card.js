@@ -17,16 +17,16 @@ class EventCard extends HTMLElement {
 
     this.outerHTML = `
       <div class="event-list__content" id="${id}">
-        <div class="event-list__image">
+        <figure class="event-list__image">
           <img src="${image}" alt="event" />
-        </div>
+        </figure>
         <div class="event-list__info">
           <div class="event-list__card">
-            <div>
+            <article>
               <h5 class="h4-event-date">${date}</h5>
               <h2 class="display-3">${title}</h2>
               <h5 class="body-lg font-regular">${description}</h5>
-            </div>
+            </article>
             <a class="button-link-text button-xl" href="${href}">Get Ticket Now</a>
           </div>
         </div>

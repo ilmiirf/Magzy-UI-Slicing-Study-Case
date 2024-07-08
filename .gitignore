@@ -126,3 +126,5 @@ typings/
 # Optional directories and files
 package-lock.json
 dist
+
+trial.html
