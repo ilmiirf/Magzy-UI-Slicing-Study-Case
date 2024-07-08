@@ -5,6 +5,10 @@
 .photoshoot {
   padding-block: 120px;
 
+  @include media-breakpoint-down(md) {
+    padding-block: 64px;
+  }
+
   &__wrapper {
     margin-top: 56px;
     display: flex;
@@ -18,6 +22,10 @@
     @include media-breakpoint-down(lg) {
       flex-direction: column-reverse;
       min-height: auto;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 44px;
     }
   }
 

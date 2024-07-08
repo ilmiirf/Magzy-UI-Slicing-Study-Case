@@ -29,8 +29,10 @@ import "./icons/icon-up";
 import "./components/photoshoot-images";
 import "./components/photoshoot-information";
 import "./components/infinite-scroll";
+import "./components/event-card";
 
 // import custom js
 import "./custom/tab-menu";
-import "./custom/photoshoot-responsive";
+import "./custom/photoshoot";
 import "./custom/navigation";
+import "./custom/feature";

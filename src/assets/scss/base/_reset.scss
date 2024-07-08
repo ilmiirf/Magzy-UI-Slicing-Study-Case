@@ -4,7 +4,7 @@ body {
 a {
   color: inherit;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 
   &:hover {
     color: $secondary;
@@ -62,6 +62,19 @@ img {
     $h3-letter-spacing,
     $h3-mobile-letter-spacing
   );
+
+  &--not-responsive {
+    @include media-breakpoint-down(md) {
+      @include heading-size(
+        $h3-font-size,
+        toRem(48),
+        $h3-line-height,
+        toRem(48),
+        $h3-letter-spacing,
+        toRem(0.05 * 48)
+      );
+    }
+  }
 }
 
 .h4 {
@@ -74,6 +87,19 @@ img {
     $h4-letter-spacing,
     $h4-mobile-letter-spacing
   );
+
+  &--not-responsive {
+    @include media-breakpoint-down(md) {
+      @include heading-size(
+        $h4-font-size,
+        $h4-font-size,
+        $h4-line-height,
+        $h4-line-height,
+        $h4-letter-spacing,
+        $h4-letter-spacing
+      );
+    }
+  }
 }
 
 .h5 {
@@ -86,6 +112,19 @@ img {
     $h5-letter-spacing,
     $h5-mobile-letter-spacing
   );
+
+  &--not-responsive {
+    @include media-breakpoint-down(md) {
+      @include heading-size(
+        $h5-font-size,
+        toRem(26),
+        $h5-line-height,
+        toRem(32),
+        $h5-letter-spacing,
+        toRem(0.07 * 26)
+      );
+    }
+  }
 }
 
 .h6 {

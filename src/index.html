@@ -34,73 +34,99 @@ License: -
     <div class="custom-container">
       <div class="navigation">
         <div class="navigation__menu">
-          <div class="btn-icon icon-hamburger"></div>
-          <div class="btn-icon icon-close"></div>
-          <ul class="navigation__list">
+          <div class="navigation__btn-menu" id="toggleMenu">
+            <div class="button-menu">
+              <icon-menu></icon-menu>
+            </div>
+            <div class="button-close">
+              <icon-close></icon-close>
+            </div>
+          </div>
+          <ul class="navigation__list" id="menu">
             <li class="navigation__item">
-              <a href="#news" class="navigation__link">News</a>
+              <a href="#news" class="navigation__link">News
+                <div class="navigation__link-icon">
+                  <icon-right-top></icon-right-top>
+                </div>
+              </a>
+              
             </li>
             <icon-slash></icon-slash>
             <li class="navigation__item">
-              <a href="#events" class="navigation__link">Events</a>
+              <a href="#events" class="navigation__link">Events
+                <div class="navigation__link-icon">
+                  <icon-right-top></icon-right-top>
+                </div>
+              </a>
             </li>
             <icon-slash></icon-slash>
             <li class="navigation__item">
-              <a href="#shop" class="navigation__link">Shop</a>
+              <a href="#shop" class="navigation__link">Shop
+                <div class="navigation__link-icon">
+                  <icon-right-top></icon-right-top>
+                </div>
+              </a>
             </li>
             <icon-slash></icon-slash>
             <li class="navigation__item">
-              <a href="#gallery" class="navigation__link">Gallery</a>
+              <a href="#gallery" class="navigation__link">Gallery
+                <div class="navigation__link-icon">
+                  <icon-right-top></icon-right-top>
+                </div>
+              </a>
             </li>
             <icon-slash></icon-slash>
             <li class="navigation__item navigation__dropdown" id="toggleDropdownMenu">
-              <a href="#allMenu" class="navigation__link">All Pages <icon-down /></a>
+              <a href="#allMenu" class="navigation__link">All Pages 
+                <div class="navigation__link-icon" style="display: block;">
+                <icon-down></icon-down>
+              </div></a>
               <div class="navigation__dropdown-box" id="dropdownMenu">
-                <ul class="navigation__dropdown-list custom-container">
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Home</a>
+                <ul class="navigation__dropdown-list">
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link link-active">Home</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Stories</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Stories</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Event</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Event</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Shop</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Shop</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Gallery</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Gallery</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Cart</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Cart</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">About</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">About</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Contact</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Contact</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Checkout</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Checkout</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">401</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">401</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">404</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">404</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Order Confirmation</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Order Confirmation</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Changelog</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Changelog</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Style Guide</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Style Guide</a>
                   </li>
-                  <li class="navigation__item">
-                    <a href="#" class="navigation__link">Licence</a>
+                  <li class="navigation__sub-item">
+                    <a href="#" class="navigation__sub-link">Licence</a>
                   </li>
                 </ul>
               </div>
@@ -115,7 +141,7 @@ License: -
             <icon-cart></icon-cart>
           </a>
           <icon-slash></icon-slash>
-          <div class="btn-subscribe">
+          <div class="button-subscribe">
             <a href="#" class="button-lg">Subscribe</a>
           </div>
         </div>
@@ -130,16 +156,16 @@ License: -
     <!-- Start::Hero Section -->
     <section class="section-hero">
       <div class="hero custom-container">
-        <div class="hero__title">
+        <article class="hero__title">
           <h1 class="display-1 font-hc">M</h1>
           <h1 class="display-1 font-hc">a</h1>
           <h1 class="display-1 font-hc">g</h1>
           <h1 class="display-1 font-hc">z</h1>
-          <div class="hero__title-y">
+          <article class="hero__title-y">
             <h1 class="display-1 font-hc">y</h1>
             <h4 class="display-5">Magazine</h4>
-          </div>
-        </div>
+          </article>
+        </article>
       </div>
       <div class="hero__image">
         <img src="assets/media/images/hero.png" alt="hero" />
@@ -153,13 +179,13 @@ License: -
         <div class="feature custom-container">
           <div class="carousel-inner">
             <!-- Start::Slide 1 -->
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-feature="1">
               <div class="feature-slide">
                 <div class="feature-slide__image-box">
-                  <div class="feature-slide__image">
+                  <div class="feature-slide__image" id="image-feature-1">
                     <img src="assets/media/images/features-3.png" alt="feature" />
                   </div>
-                  <div class="writer">
+                  <div class="writer" id="writer-feature-1">
                     <icon-star></icon-star>
                     <p class="body-normal font-light">
                       Written by
@@ -169,12 +195,12 @@ License: -
                 </div>
 
                 <div class="feature-slide__content blog">
-                  <div class="blog__content">
+                  <div class="blog__content" id="content-feature-1">
                     <div class="blog__meta">
-                      <div class="tag">
+                      <div class="tag tag--inherit">
                         <p class="body-normal font-semibold">fashion</p>
                       </div>
-                      <p class="body-normal font-regular">Aug 8, 2022</p>
+                      <time class="body-normal font-regular">Aug 8, 2022</time>
                     </div>
                     <div class="blog__title">
                       <a class="h2">
@@ -199,13 +225,13 @@ License: -
             <!-- End::Slide 1 -->
 
             <!-- Start::Slide 2 -->
-            <div class="carousel-item">
+            <div class="carousel-item" data-feature="2">
               <div class="feature-slide">
                 <div class="feature-slide__image-box">
-                  <div class="feature-slide__image">
+                  <div class="feature-slide__image" id="image-feature-2">
                     <img src="assets/media/images/features-1.png" alt="feature" />
                   </div>
-                  <div class="writer">
+                  <div class="writer" id="writer-feature-2">
                     <icon-star></icon-star>
                     <p class="body-normal font-light">
                       Written by
@@ -215,12 +241,12 @@ License: -
                 </div>
 
                 <div class="feature-slide__content blog">
-                  <div class="blog__content">
+                  <div class="blog__content" id="content-feature-2">
                     <div class="blog__meta">
-                      <div class="tag">
+                      <div class="tag tag--inherit">
                         <p class="body-normal font-semibold">fashion</p>
                       </div>
-                      <p class="body-normal font-regular">Aug 8, 2022</p>
+                      <time class="body-normal font-regular">Aug 8, 2022</time>
                     </div>
                     <div class="blog__title">
                       <a class="h2">
@@ -248,7 +274,7 @@ License: -
             <div class="button-slider-box">
               <button class="button-icon button-icon--large" id="prev-option" data-bs-target="#carouselFeature"
                 data-bs-slide="prev">
-                <icon-arrow-left/>
+                <icon-arrow-left />
               </button>
               <button class="button-icon button-icon--large" id="next-option" data-bs-target="#carouselFeature"
                 data-bs-slide="next">
@@ -267,13 +293,13 @@ License: -
     <!-- Start::Stories Section -->
     <section class="section-stories">
       <div class="story custom-container">
-        <div class="heading-title">
+        <article class="heading-title">
           <h2 class="h1">Today's <span class="font-hc">Stories</span></h2>
           <a class="button-link">
             <h4 class="h4">view all</h4>
             <icon-right-top />
           </a>
-        </div>
+        </article>
         <div class="story__content">
           <div class="story__item-1 blog blog--block">
             <div class="blog__image">
@@ -282,15 +308,14 @@ License: -
             <div class="blog__content-warapper">
               <div class="blog__content">
                 <div class="blog__meta">
-                  <div class="tag">
+                  <div class="tag tag--light">
                     <p class="body-normal font-semibold">fashion</p>
                   </div>
-                  <p class="body-normal font-regular">Aug 8, 2022</p>
+                  <time class="body-normal font-regular">Aug 09, 2022</time>
                 </div>
                 <div class="blog__title">
-                  <a class="h3">
-                    What Street Fashion Was Like a Decade Ago a Decade Ago
-                    Like
+                  <a class="h3 h3--not-responsive">
+                    The Best Copenhangen Street Style Photos From the Fall 2023 Season
                   </a>
                 </div>
               </div>
@@ -298,61 +323,62 @@ License: -
                 <icon-star></icon-star>
                 <p class="body-normal font-light">
                   Written by
-                  <span class="font-semibold">Jashmeen Alexandra</span>
+                  <span class="font-semibold">Nikola Kovac</span>
                 </p>
               </div>
             </div>
           </div>
-          <div class="story__item-2 blog blog--inline">
-            <div class="blog__image">
-              <img src="assets/media/images/story-2.png" alt="story" />
-            </div>
-            <div class="blog__content-warapper">
-              <div class="blog__content">
-                <div class="blog__meta">
-                  <div class="tag">
-                    <p class="body-normal font-semibold">fashion</p>
+          <div class="story__items-2-3">
+            <div class="story__item-2 blog blog--inline">
+              <div class="blog__image">
+                <img src="assets/media/images/story-2.png" alt="story" />
+              </div>
+              <div class="blog__content-warapper">
+                <div class="blog__content">
+                  <div class="blog__meta">
+                    <div class="tag tag--light">
+                      <p class="body-normal font-semibold">fashion</p>
+                    </div>
+                    <time class="body-normal font-regular">Aug 10, 2022</time>
                   </div>
-                  <p class="body-normal font-regular">Aug 10, 2022</p>
-                </div>
-                <div class="blog__title">
-                  <a class="h3"> Men, promise, skirts aren't that scary! </a>
-                </div>
-              </div>
-              <div class="writer">
-                <icon-star></icon-star>
-                <p class="body-normal font-light">
-                  Written by
-                  <span class="font-semibold">Jashmeen Alexandra</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="story__item-3 blog blog--inline">
-            <div class="blog__image">
-              <img src="assets/media/images/story-3.png" alt="story" />
-            </div>
-            <div class="blog__content-warapper">
-              <div class="blog__content">
-                <div class="blog__meta">
-                  <div class="tag">
-                    <p class="body-normal font-semibold">fashion</p>
+                  <div class="blog__title">
+                    <a class="h3">WHat Street Fashion Was Like A decade ago</a>
                   </div>
-                  <p class="body-normal font-regular">Aug 11, 2022</p>
                 </div>
-                <div class="blog__title">
-                  <a class="h3">
-                    The Best Copenhagen Street Style Photos From the Fall 2023
-                    Season
-                  </a>
+                <div class="writer">
+                  <icon-star></icon-star>
+                  <p class="body-normal font-light">
+                    Written by
+                    <span class="font-semibold">Anna Wojeik</span>
+                  </p>
                 </div>
               </div>
-              <div class="writer">
-                <icon-star></icon-star>
-                <p class="body-normal font-light">
-                  Written by
-                  <span class="font-semibold">Jashmeen Alexandra</span>
-                </p>
+            </div>
+            <div class="story__item-3 blog blog--inline">
+              <div class="blog__image">
+                <img src="assets/media/images/story-3.png" alt="story" />
+              </div>
+              <div class="blog__content-warapper">
+                <div class="blog__content">
+                  <div class="blog__meta">
+                    <div class="tag tag--light">
+                      <p class="body-normal font-semibold">fashion</p>
+                    </div>
+                    <time class="body-normal font-regular">Aug 11, 2022</time>
+                  </div>
+                  <div class="blog__title">
+                    <a class="h3">
+                      Men, promise, skirts aren't that scary!
+                    </a>
+                  </div>
+                </div>
+                <div class="writer">
+                  <icon-star></icon-star>
+                  <p class="body-normal font-light">
+                    Written by
+                    <span class="font-semibold">Eleni Papadopoulos</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -364,56 +390,86 @@ License: -
     <!-- Start::Even List Section -->
     <section class="section-event-list">
       <div class="event-list">
-        <div class="heading-title heading-title--center custom-container">
+        <article class="heading-title heading-title--center custom-container">
           <h2 class="h1">Event <span class="font-hc">List</span></h2>
-        </div>
-        <div class="custom-mobile-container">
-          <div class="event-list__dates">
-            <button class="button-tab button-tab--active h4-event-date" data-rel="tab-1">
-              20.03.2023
-            </button>
-            <button class="button-tab h4-event-date" data-rel="tab-2">
-              21.03.2023
-            </button>
-            <button class="button-tab h4-event-date" data-rel="tab-3">
-              22.03.2023
-            </button>
-            <button class="button-tab h4-event-date" data-rel="tab-4">
-              23.03.2023
-            </button>
-            <button class="button-tab h4-event-date" data-rel="tab-4">
-              24.03.2023
-            </button>
-            <div class="button-view-all">
-              <a class="button-link">
-                <h4 class="h4-event-date">view all</h4>
-                <icon-right-top ></icon-right-top>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="event-list__menu custom-left-container" id="tab-1" style="display: block">
-          <div class="event-list__content">
-            <div class="event-list__image">
-              <img src="assets/media/images/event-list1.png" alt="event" />
-            </div>
-            <div class="event-list__info">
-              <div class="event-list__card">
-                <div>
-                  <h5 class="h4-event-date">04.05.2023</h5>
-                  <h2 class="display-3">Urban Runaway</h2>
-                  <h5 class="body-lg font-regular">
-                    A fashionable street event
-                  </h5>
-                </div>
-                <a class="button-link-text button-xl">Get Ticket Now</a>
+        </article>
+        <div class="event-list__body">
+          <div class="custom-mobile-container">
+            <div class="event-list__dates">
+              <button class="button-tab button-tab--active h4-event-date" data-rel="tab-1">
+                20.03.2023
+              </button>
+              <div class="lg-row-2 md-row-2 sm-row-2 event-list__menu" id="tab-1" style="display: block">
+                <event-card
+                  id="eventCard1"
+                  data-image="assets/media/images/event-list1.png"
+                  data-title="Urban Runaway"
+                  data-description="A fashionable street event"
+                  data-href="#"
+                  data-date="20.03.2023"
+                ></event-card>
+              </div>
+              <button class="button-tab h4-event-date" data-rel="tab-2">
+                04.05.2023
+              </button>
+              <div class="lg-row-2 md-row-2 sm-row-3 event-list__menu" id="tab-2">
+                <event-card
+                  id="eventCard1"
+                  data-image="assets/media/images/event-list1.png"
+                  data-title="Urban Runaway"
+                  data-description="A fashionable street event"
+                  data-href="#"
+                  data-date="04.05.2023"
+                ></event-card>
+              </div>
+              <button class="button-tab h4-event-date" data-rel="tab-3">
+                22.03.2023
+              </button>
+              <div class="lg-row-2 md-row-3 sm-row-4 event-list__menu" id="tab-3">
+                <event-card
+                  id="eventCard3"
+                  data-image="assets/media/images/event-list2.png"
+                  data-title="Urban Runaway"
+                  data-description="A fashionable street event"
+                  data-href="#"
+                  data-date="22.03.2023"
+                ></event-card>
+              </div>
+              <button class="button-tab h4-event-date" data-rel="tab-4">
+                23.03.2023
+              </button>
+              <div class="lg-row-4 md-row-3 sm-row-5 event-list__menu" id="tab-4">
+                <event-card
+                  id="eventCard4"
+                  data-image="assets/media/images/event-list3.png"
+                  data-title="Urban Runaway"
+                  data-description="A fashionable street event"
+                  data-href="#"
+                  data-date="23.03.2023"
+                ></event-card>
+              </div>
+              <button class="button-tab h4-event-date" data-rel="tab-5">
+                24.03.2023
+              </button>
+              <div class="lg-row-4 md-row-5 sm-row-6 event-list__menu" id="tab-5">
+                <event-card
+                  id="eventCard5"
+                  data-image="assets/media/images/event-list3.png"
+                  data-title="Urban Runaway"
+                  data-description="A fashionable street event"
+                  data-href="#"
+                  data-date="24.03.2023"
+                ></event-card>
+              </div>
+              <div class="button-view-all">
+                <a class="button-link">
+                  <h4 class="h4-event-date">view all</h4>
+                  <icon-right-top></icon-right-top>
+                </a>
               </div>
             </div>
-            <div class="event-list__addition">
-              <infinite-scroll></infinite-scroll>
-            </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -422,26 +478,21 @@ License: -
     <!-- Start::Photoshot Section -->
     <section class="section-photoshoot">
       <div class="photoshoot custom-container">
-        <div class="heading-title">
+        <article class="heading-title">
           <h2 class="h1">Fashion Photos<span class="font-hc">oo</span>t</h2>
           <a class="button-link">
             <h4 class="h4">view all</h4>
-            <icon-right-top ></icon-right-top>
+            <icon-right-top></icon-right-top>
           </a>
-        </div>
+        </>
         <div class="photoshoot__content">
           <div class="photoshoot__wrapper" data-photoshoot="1">
             <photoshoot-information id="1"
               data-title="Photo of Fashion Model Nicole Black at Del Mar Villa in Dundee Oregon"
-              data-creative-direction="Marne Swartch" 
-              data-photography="Lance Reis" 
-              data-fashion-direction="Lee Jae Min"
-              data-hair-and-makeup="Charlotte Marie" 
-              data-fashion-model="Sarah Nicole"
-              data-href="#">
+              data-creative-direction="Marne Swartch" data-photography="Lance Reis" data-fashion-direction="Lee Jae Min"
+              data-hair-and-makeup="Charlotte Marie" data-fashion-model="Sarah Nicole" data-href="#">
             </photoshoot-information>
-            <photoshoot-images id="1" 
-              data-image-1="assets/media/images/photoshoot-1-1.png"
+            <photoshoot-images id="1" data-image-1="assets/media/images/photoshoot-1-1.png"
               data-image-2="assets/media/images/photoshoot-1-2.png"
               data-image-3="assets/media/images/photoshoot-1-3.png">
             </photoshoot-images>
@@ -449,12 +500,9 @@ License: -
           <div class="photoshoot__wrapper" data-photoshoot="2">
             <photoshoot-information id="2"
               data-title="Cabinet of curiosities is published in the 11th edition of magzy magazine"
-              data-creative-direction="anastasia dhruv"
-              data-photography="dmitry popov"
-              data-fashion-direction="carlo conti"
-              data-hair-and-makeup="jacques moreau"
-              data-fashion-model="charlotte lefevre, isabelle girard chiarra moretti"
-              data-href="#">
+              data-creative-direction="anastasia dhruv" data-photography="dmitry popov"
+              data-fashion-direction="carlo conti" data-hair-and-makeup="jacques moreau"
+              data-fashion-model="charlotte lefevre, isabelle girard chiarra moretti" data-href="#">
             </photoshoot-information>
             <photoshoot-images id="2" data-image-1="assets/media/images/photoshoot-2-1.png"
               data-image-2="assets/media/images/photoshoot-2-2.png"
@@ -462,17 +510,12 @@ License: -
             </photoshoot-images>
           </div>
           <div class="photoshoot__wrapper" data-photoshoot="3">
-            <photoshoot-information id="3"
-              data-title="A Glimpse into the vibrant world of iranian fashion"
-              data-creative-direction="Ivan Petrov"
-              data-photography="Mostafa Meraji"
-              data-fashion-direction="Guillaume Dubois"
-              data-hair-and-makeup="Sofia Esposito"
-              data-fashion-model="Behnam Ahmadi,Hassan karimi, Reza Tabatabei"
-              data-href="#">
+            <photoshoot-information id="3" data-title="A Glimpse into the vibrant world of iranian fashion"
+              data-creative-direction="Ivan Petrov" data-photography="Mostafa Meraji"
+              data-fashion-direction="Guillaume Dubois" data-hair-and-makeup="Sofia Esposito"
+              data-fashion-model="Behnam Ahmadi,Hassan karimi, Reza Tabatabei" data-href="#">
             </photoshoot-information>
-            <photoshoot-images id="3" 
-              data-image-1="assets/media/images/photoshoot-3-1.png"
+            <photoshoot-images id="3" data-image-1="assets/media/images/photoshoot-3-1.png"
               data-image-2="assets/media/images/photoshoot-3-2.png"
               data-image-3="assets/media/images/photoshoot-3-3.png">
             </photoshoot-images>
@@ -485,39 +528,39 @@ License: -
     <!-- Start::Magazine Section -->
     <section class="section-magazine">
       <div class="magazine custom-container">
-        <div class="heading-title heading-title--center custom-container">
+        <article class="heading-title heading-title--center custom-container">
           <h2 class="h1">
             Magazine <span class="font-hc">Collections</span>
           </h2>
-        </div>
+        </article>
         <div class="magazine__scroll">
           <div class="magazine__content">
             <div class="magazine__wrapper">
               <div class="magazine__image">
                 <img src="assets/media/images/magazine-1.png" alt="magazine" />
               </div>
-              <div class="magazine__info">
+              <article class="magazine__info">
                 <a class="h5">Magzy 10 - Classic style</a>
                 <p class="body-normal font-regular">$10</p>
-              </div>
+              </article>
             </div>
             <div class="magazine__wrapper">
               <div class="magazine__image">
                 <img src="assets/media/images/magazine-2.png" alt="magazine" />
               </div>
-              <div class="magazine__info">
+              <article class="magazine__info">
                 <a class="h5">Magzy 9 - Classic style</a>
                 <p class="body-normal font-regular">$10</p>
-              </div>
+              </article>
             </div>
             <div class="magazine__wrapper">
               <div class="magazine__image">
                 <img src="assets/media/images/magazine-3.png" alt="magazine" />
               </div>
-              <div class="magazine__info">
+              <article class="magazine__info">
                 <a class="h5">Magzy 8 - Classic style</a>
                 <p class="body-normal font-regular">$10</p>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -539,12 +582,14 @@ License: -
             Subscribe <span>NOW</span>
           </h2>
           <div class="footer-form">
-            <input type="text" placeholder="E-MAIL ADDRESS" class="footer-form__input body-xl font-medium" />
+            <input type="text" placeholder="E-MAIL ADDRESS" class="footer-form__input body-xl body-xl--responsive font-medium" />
             <button class="footer-form__button body-lg font-medium">Subscribe</button>
           </div>
         </div>
         <div class="footer__description">
-          <h3 class="h2 font-hc">MAGZY</h3>
+          <div class="footer__logo">
+            <img src="assets/media/images/logo.png" alt="logo" />
+          </div>
           <p class="body-normal font-regular">Magzy has the most recent information on fashion, beauty, celebrity style,
             fashion week updates, reviews of popular culture, and videos.</p>
         </div>
@@ -556,7 +601,7 @@ License: -
       </div>
       <div class="footer-nav custom-container">
         <div class="footer-nav__menu">
-          <h5 class="h5">menu</h5>
+          <h5 class="h5 h5--not-responsive">menu</h5>
           <div class="footer-nav__item">
             <a class="body-normal font-regular">Fashion</a>
             <a class="body-normal font-regular">Celebrity</a>
@@ -569,7 +614,7 @@ License: -
           </div>
         </div>
         <div class="footer-nav__menu">
-          <h5 class="h5">contact</h5>
+          <h5 class="h5 h5--not-responsive">contact</h5>
           <div class="footer-nav__item">
             <p class="body-normal font-regular">Magzy</p>
             <p class="body-normal font-regular">Unit 3, 42-90 - Scrutton Street</p>
@@ -580,7 +625,7 @@ License: -
           </div>
         </div>
         <div class="footer-nav__menu">
-          <h5 class="h5">follow</h5>
+          <h5 class="h5 h5--not-responsive">follow</h5>
           <div class="footer-nav__item">
             <a class="body-normal font-regular">Instagram</a>
             <a class="body-normal font-regular">Facebook</a>
@@ -592,8 +637,14 @@ License: -
   </footer>
   <!-- End::Footer -->
 
-  <footer>
-
+  <footer class="section-copyright">
+    <div class="copyright custom-container">
+      <p class="body-normal font-light">© Designed by <span class="font-semibold">Pixeflow</span>. Powered by <span class="font-semibold">Webflow</span></p>
+      <div class="copyright__links">
+        <a class="body-normal font-semibold">Privacy</a>
+        <a class="body-normal font-semibold">Terms</a>
+      </div>
+    </div>
   </footer>
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->

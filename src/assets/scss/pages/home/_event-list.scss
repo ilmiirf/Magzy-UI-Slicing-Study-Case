@@ -4,10 +4,36 @@
   flex-direction: column;
   gap: 56px;
 
+  @include media-breakpoint-down(md) {
+    padding-block: 64px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    @include media-breakpoint-down(lg) {
+      gap: 0px;
+    }
+  }
+
   &__dates {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: -2px;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     & > * {
       display: flex;
@@ -34,8 +60,8 @@
   &__content {
     position: relative;
     display: flex;
-    justify-content: end;
-    gap: 12px;
+    justify-content: start;
+    gap: 24px;
     min-height: 690px;
     height: fit-content;
     width: 100%;
@@ -45,13 +71,16 @@
       flex-direction: column;
       height: auto;
       padding-left: 24px;
-      padding-right: 80px;
+      padding-right: 83px;
       background: $bg-dark;
-      gap: 0;
+      gap: 24px;
     }
 
     @include media-breakpoint-down(sm) {
-      padding-right: 16px;
+      padding-right: 83px;
+      padding-left: 16px;
+      min-height: fit-content;
+      padding-bottom: 24px;
     }
   }
 
@@ -92,6 +121,10 @@
       padding-block: 24px;
       min-height: fit-content;
     }
+
+    @include media-breakpoint-down(md) {
+      padding-block: 0;
+    }
   }
 
   &__card {
@@ -105,8 +138,15 @@
       height: 100%;
     }
 
-    & .display-3 {
-      margin-top: 33px;
+    @include media-breakpoint-down(md) {
+      gap: 16px;
+    }
+
+    & .h4-event-date {
+      margin-bottom: 33px;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
     }
   }
 

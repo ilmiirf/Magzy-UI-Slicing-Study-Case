@@ -19,7 +19,7 @@ class PhotoshootInformation extends HTMLElement {
 
     this.outerHTML = `
         <div class="photoshoot__information" id="photoshootInformation${id}">
-        <a class="h4" href="#" id="photoshootTitle${id}">
+        <a class="h5 h5--not-responsive" href="#" id="photoshootTitle${id}">
           ${title}
         </a>
         <div class="photoshoot__description">

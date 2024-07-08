@@ -58,7 +58,7 @@ $min-contrast-ratio: 1.5;
 $grid-breakpoints: (
   xs: 0,
   xs-1: 200px,
-  sm: 375px,
+  sm: 550px,
   md: 767px,
   lg: 991px,
   xl: 1240px,
@@ -225,7 +225,7 @@ $display5-line-height: toRem(72);
 
 $display1-mobile-line-height: 100%;
 $display2-mobile-line-height: 100%;
-$display3-mobile-line-height: 100%;
+$display3-mobile-line-height: toRem(72);
 $display4-mobile-line-height: 100%;
 $display5-mobile-line-height: 100%;
 

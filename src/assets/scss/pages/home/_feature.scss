@@ -17,6 +17,10 @@
     gap: 0;
   }
 
+  @include media-breakpoint-down(md) {
+    padding-block: 64px;
+  }
+
   &__slider-button {
     width: 200px;
     display: flex;
@@ -57,6 +61,10 @@
 
   @include media-breakpoint-down(lg) {
     flex-direction: column;
+  }
+
+  @include media-breakpoint-down(md) {
+    gap: 32px;
   }
 
   &__image-box {
@@ -103,7 +111,7 @@
   }
 
   &__description {
-    width: 72%;
+    width: 71%;
     align-self: flex-end;
 
     @include media-breakpoint-down(lg) {
