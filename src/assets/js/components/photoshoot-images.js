@@ -15,6 +15,7 @@ class PhotoshootImages extends HTMLElement {
 
     this.outerHTML = `
       <div class="photoshoot__images" id="photoshootImgList${id}">
+        <div class="photoshoot__scroll">
         <figure class="photoshoot__image">
           <img src="${image1}" alt="photoshoot" />
         </figure>
@@ -24,6 +25,7 @@ class PhotoshootImages extends HTMLElement {
         <figure class="photoshoot__image">
           <img src="${image3}" alt="photoshoot" />
         </figure>
+        </div>
       </div>
       `;
   }

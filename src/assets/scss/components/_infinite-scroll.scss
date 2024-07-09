@@ -1,6 +1,5 @@
 .infinite-scroll {
   transform: rotate(90deg);
-
   height: 96px;
   color: $text-white;
   display: flex;
@@ -44,6 +43,6 @@
 
 @keyframes scroll {
   to {
-    transform: translateX(calc(-100%));
+    transform: translateX(calc(-100% - 18px));
   }
 }

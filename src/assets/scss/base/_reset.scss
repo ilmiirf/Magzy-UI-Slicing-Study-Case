@@ -121,11 +121,11 @@ figure {
     @include media-breakpoint-down(md) {
       @include heading-size(
         $h5-font-size,
-        toRem(26),
+        $h5-font-size,
         $h5-line-height,
-        toRem(32),
+        $h5-line-height,
         $h5-letter-spacing,
-        toRem(0.07 * 26)
+        $h5-letter-spacing
       );
     }
   }

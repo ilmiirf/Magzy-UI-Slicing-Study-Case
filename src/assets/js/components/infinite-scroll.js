@@ -15,7 +15,7 @@ class InfiniteScroll extends HTMLElement {
             <span class="thunder-lc-light-48">FREE ENTRY</span>
             <icon-bullet></icon-bullet>
           </li>
-          <li>
+           <li>
             <span class="thunder-lc-light-48">FREE ENTRY</span>
             <icon-bullet></icon-bullet>
           </li>
@@ -32,6 +32,18 @@ class InfiniteScroll extends HTMLElement {
             <icon-bullet></icon-bullet>
           </li>
           <li>
+            <span class="thunder-lc-light-48">FREE ENTRY</span>
+            <icon-bullet></icon-bullet>
+          </li>
+          <li>
+            <span class="thunder-lc-light-48">FREE ENTRY</span>
+            <icon-bullet></icon-bullet>
+          </li>
+          <li>
+            <span class="thunder-lc-light-48">FREE ENTRY</span>
+            <icon-bullet></icon-bullet>
+          </li>
+           <li>
             <span class="thunder-lc-light-48">FREE ENTRY</span>
             <icon-bullet></icon-bullet>
           </li>
@@ -41,6 +53,18 @@ class InfiniteScroll extends HTMLElement {
           </li>
         </ul>
         <ul>
+          <li>
+            <span class="thunder-lc-light-48">FREE ENTRY</span>
+            <icon-bullet></icon-bullet>
+          </li>
+          <li>
+            <span class="thunder-lc-light-48">FREE ENTRY</span>
+            <icon-bullet></icon-bullet>
+          </li>
+           <li>
+            <span class="thunder-lc-light-48">FREE ENTRY</span>
+            <icon-bullet></icon-bullet>
+          </li>
           <li>
             <span class="thunder-lc-light-48">FREE ENTRY</span>
             <icon-bullet></icon-bullet>

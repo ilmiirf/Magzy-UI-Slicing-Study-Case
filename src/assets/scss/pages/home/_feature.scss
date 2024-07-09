@@ -14,7 +14,7 @@
 
   @include media-breakpoint-down(lg) {
     flex-direction: column;
-    gap: 0;
+    gap: 24px;
   }
 
   @include media-breakpoint-down(md) {
@@ -55,7 +55,6 @@
 .feature-slide {
   display: flex;
   gap: 56px;
-  padding-bottom: 24px;
   max-width: 1055px;
   width: 100%;
 

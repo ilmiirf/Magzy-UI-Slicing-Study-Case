@@ -24,4 +24,18 @@
     border: 1px solid;
     border-color: inherit;
   }
+
+  &--inherit-light {
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid;
+    border-color: inherit;
+
+    @include media-breakpoint-down(lg) {
+      background-color: $bg-light;
+      color: $text-dark;
+      border: 1px solid $gray;
+      border-color: $text-dark;
+    }
+  }
 }

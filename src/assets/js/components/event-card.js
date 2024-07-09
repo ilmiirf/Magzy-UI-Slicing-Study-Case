@@ -25,7 +25,7 @@ class EventCard extends HTMLElement {
             <article>
               <h5 class="h4-event-date">${date}</h5>
               <h2 class="display-3">${title}</h2>
-              <h5 class="body-lg font-regular">${description}</h5>
+              <h5 class="body-xl font-regular">${description}</h5>
             </article>
             <a class="button-link-text button-xl" href="${href}">Get Ticket Now</a>
           </div>

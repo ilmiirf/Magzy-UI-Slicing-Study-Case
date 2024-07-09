@@ -8,7 +8,7 @@
   &__top {
     width: 100%;
     grid-template-rows: min-content min-content;
-    grid-template-columns: 1fr 35%;
+    grid-template-columns: 1fr 36%;
     display: grid;
     position: relative;
 
@@ -29,10 +29,9 @@
     @include media-breakpoint-down(lg) {
       display: flex;
       flex-direction: column;
-      gap: 220px;
+      gap: 180px;
       min-width: 100%;
       position: static;
-
       padding-right: 48px;
     }
 
@@ -40,10 +39,11 @@
       padding-inline: 24px;
       padding-top: 64px;
       padding-bottom: 32px;
+      gap: 245px;
     }
 
     @include media-breakpoint-down(sm) {
-      gap: 166px;
+      gap: 170px;
     }
   }
 
@@ -95,7 +95,7 @@
     }
 
     > .body-normal {
-      width: 350px;
+      width: 315px;
 
       @include media-breakpoint-down(lg) {
         width: 70%;
@@ -128,8 +128,8 @@
     }
 
     @include media-breakpoint-down(sm) {
-      top: 190px;
-      left: 170px;
+      top: 170px;
+      left: 190px;
       height: 238px;
       width: 50%;
     }
@@ -165,7 +165,7 @@
 
 .footer-form {
   position: absolute;
-  bottom: 84px;
+  bottom: 86px;
   right: 0px;
   left: 400px;
   display: flex;
@@ -187,7 +187,6 @@
     border: none;
     border-top: 1px solid $gray;
     border-bottom: 1px solid $gray;
-    padding-inline: 16px;
     background: transparent;
 
     &::placeholder {
@@ -224,13 +223,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-block: 40px;
+  padding-block: 40px 86px;
   border-bottom: 1px solid $gray;
   gap: 32px;
   height: fit-content;
 
   @include media-breakpoint-down(lg) {
     flex-direction: column;
+    padding-bottom: calc(86px - 30px);
   }
 
   @include media-breakpoint-down(md) {

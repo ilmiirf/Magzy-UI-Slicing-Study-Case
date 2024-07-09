@@ -152,6 +152,7 @@
     height: 40px;
     width: auto;
     padding-inline: 12px;
+
     @include media-breakpoint-down(lg) {
       height: 24px;
     }
@@ -183,17 +184,28 @@
 }
 
 .button-menu {
+  height: 28px;
   color: $text-dark;
   display: block;
+
+  svg {
+    vertical-align: 0;
+  }
 }
 
 .button-close {
+  height: 28px;
   color: $text-dark;
   display: none;
+
+  svg {
+    vertical-align: 0;
+  }
 }
 
 .button-subscribe {
   color: $primary;
+  padding-top: 6px;
 
   @include media-breakpoint-down(lg) {
     & > a {
